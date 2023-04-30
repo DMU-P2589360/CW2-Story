@@ -1,0 +1,2423 @@
+body {
+background-color: lightblue;
+ }
+
+/*Styling of text*/
+
+ /* Position text in the middle of the page/image */
+  .text {
+    background-color: lightgrey; opacity: 70%;; /* Black w/opacity/see-through */
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+    width: 40%;
+    border: 10px solid #f1f1f1;
+    position:absolute; /* Stay fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+  display: block;
+  }
+.text:hover {
+  opacity: 20%;
+}
+.text2 {
+  background-color: lightgrey; opacity: 70%;; /* Black w/opacity/see-through */
+  color: black;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position:absolute; /* Stay fixed */
+  top: 160%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50%;
+  text-align: center;
+display: block;
+font-size: 50px;
+width: 40%;
+  }
+.text3 {
+  background-color: lightgrey; opacity: 70%;; /* Black w/opacity/see-through */
+  color: black;
+  font-weight: bold;
+  border: 10px solid #f1f1f1;
+  position:absolute; /* Stay fixed */
+  top: 260%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  font-size: 50px;
+  width: 40%;
+}
+.text4 {
+  background-color: lightgrey; opacity: 70%;; /* Black w/opacity/see-through */
+  color: black;
+  font-weight: bold;
+  border: 10px solid #f1f1f1;
+  position:absolute; /* Stay fixed */
+  top: 400%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  display: block;
+  font-size: 50px;
+  width: 40%;
+}
+#textBH {
+  background-color: lightgrey; opacity: 70%;; /* Black w/opacity/see-through */
+  color: black;
+  font-weight: bold;
+  border: 10px solid #f1f1f1;
+  position:absolute; /* Stay fixed */
+  top: 30%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 30%;
+  text-align: center;
+  display: block;
+  font-size: 50px;
+  width: 40%;
+}#textBH2 {
+  background-color: lightgrey; opacity: 70%;; /* Black w/opacity/see-through */
+  color: black;
+  font-weight: bold;
+  font-size: 60px;
+  border: 10px solid #f1f1f1;
+  position:absolute; /* Stay fixed */
+  top: 30%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 30%;
+  text-align: center;
+  display: block;
+}
+#textBH3 {
+  background-color: lightgrey; opacity: 70%;; /* Black w/opacity/see-through */
+  color: black;
+  font-weight: bold;
+  font-size: 60px;
+  border: 10px solid #f1f1f1;
+  position:absolute; /* Stay fixed */
+  top: 120%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 30%;
+  text-align: center;
+  display: block;
+}
+#textBH4 {
+  background-color: lightgrey; opacity: 70%;; /* Black w/opacity/see-through */
+  color: black;
+  font-weight: bold;
+  font-size: 60px;
+  border: 10px solid #f1f1f1;
+  position:absolute; /* Stay fixed */
+  top: 120%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 30%;
+  text-align: center;
+  display: block;
+}
+#friendstext {
+  background-color: lightgrey; opacity: 70%;; /* Black w/opacity/see-through */
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border: 10px solid #f1f1f1;
+  position:absolute; /* Stay fixed */
+  left: 25%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 20%;
+  text-align: center;
+}
+#runtext {
+  background-color: lightgrey; opacity: 70%;; /* Black w/opacity/see-through */
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border: 10px solid #f1f1f1;
+  position:absolute; /* Stay fixed */
+  left: 75%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 20%;
+    text-align: center;
+}
+#cavetext3 {
+top:270%;
+}
+#Qtext {
+top:10%;
+background-color: lightgrey; opacity: 70%;; /* Black w/opacity/see-through */
+color: black;
+font-weight: bold;
+font-size: 60px;
+border: 10px solid #f1f1f1;
+position:absolute; /* Stay fixed */
+top: 40%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 2;
+width: 40%;
+text-align: center;
+display: block;
+}
+#Qtext2 {
+  top:10%;
+  background-color: lightgrey; opacity: 70%;; /* Black w/opacity/see-through */
+  color: black;
+  font-weight: bold;
+  font-size: 60px;
+  border: 10px solid #f1f1f1;
+  position:absolute; /* Stay fixed */
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 40%;
+  text-align: center;
+  display: block;
+  }
+  #Qtext3 {
+    top:10%;
+    background-color: lightgrey; opacity: 70%;; /* Black w/opacity/see-through */
+    color: black;
+    font-weight: bold;
+    font-size: 60px;
+    border: 10px solid #f1f1f1;
+    position:absolute; /* Stay fixed */
+    top: 175%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 40%;
+    text-align: center;
+    display: block;
+    }
+
+/*Styling of buttons*/
+#NextbtnHome {
+  width:20%;
+    background-color: white;
+    color:lightcoral;
+    font-size: 30px;
+    left:40%;
+    outline: 1px solid red;
+    text-decoration: none;
+    text-align: center;
+    left: 75%;
+    position:relative;
+}
+#NextbtnHome:hover {
+color:lightblue;
+}
+  h1 {
+    background-color: white;
+    font-size: 80px;
+    text-align: center;
+    color: lightblue;
+    outline: solid lightcoral;
+    position:fixed; /* Stay fixed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    text-align: center;
+  }
+#Nextbtn{
+  width:20%;
+    background-color: white;
+    color:lightcoral;
+    font-size: 30px;
+    left:40%;
+    outline: 1px solid red;
+    text-decoration: none;
+    text-align: center;
+    position: absolute;
+    left:80%;
+}
+#NextbtnBH{
+  width:20%;
+    background-color: white;
+    color:lightcoral;
+    font-size: 30px;
+    left:40%;
+    outline: 1px solid red;
+    text-decoration: none;
+    text-align: center;
+    left:80%;
+    bottom:-100%;
+    position: absolute;
+    z-index: 1;
+}
+#NextbtnEnd{
+  width:20%;
+    background-color: white;
+    color:lightcoral;
+    font-size: 30px;
+    left:40%;
+    outline: 1px solid red;
+    text-decoration: none;
+    text-align: center;
+    left:45%;
+    bottom:9%;
+    position: absolute;
+    z-index: 1;
+}
+#NextbtnEnd:hover{
+opacity: 20%;
+}
+
+#Nextbtn:hover {
+  color:lightblue;
+}
+#NextbtnBH:hover {
+  color:lightblue;
+}
+#Prevbtn{
+  width:20%;
+    background-color: white;
+    color:lightcoral;
+    font-size: 30px;
+    left:40%;
+    outline: 1px solid red;
+    text-decoration: none;
+    text-align: center;
+    left:10%;
+}
+#Prevbtn:hover {
+  color:lightblue;
+}
+#PrevbtnBH{
+  width:20%;
+    background-color: white;
+    color:lightcoral;
+    font-size: 30px;
+    left:40%;
+    outline: 1px solid red;
+    text-decoration: none;
+    text-align: center;
+    left:1%;
+    bottom:-100%;
+    position: absolute;
+    z-index: 1;
+}
+#PrevbtnBH:hover {
+  color:lightblue;
+}
+
+
+/*Styling of images*/
+#play {
+  width:200px;
+  height:200px;
+  top:75%;
+  left:45%;
+  position: absolute;
+  }
+img {
+  width:100%;
+  height: 100%;
+  }
+#bear {
+width:20%;
+height:45%;
+position: absolute;
+top:350%;
+left:45%;
+}
+#friends {
+width: 50%; 
+position: absolute;
+}
+#friends:hover {
+opacity:20%;
+}
+#runaway {
+  width: 50%; 
+  position: absolute;
+  left: 50%;
+  }
+#runaway:hover {
+  opacity:20%;
+}
+#BH1 {
+position:absolute;
+width:50%;
+top:0;
+}
+#BH2 {
+top:0;
+position:absolute;
+width:50%;
+left:50%;
+}
+#BH3 {
+  position:absolute;
+  width:50%;
+  top:100%;
+  }
+#BH4 {
+  position:absolute;
+  width:50%;
+  top:100%;
+  left:50%;
+  }
+#dog {
+top:200%;
+width:300px;
+height:300px;
+left:5%;
+z-index: 2;
+position: absolute;
+}
+#dog:hover {
+opacity: 20%;
+}
+  
+
+  
+/*Styling of arrows*/
+#arrow /*Styling of arrow*/ {
+width: 10%; /*adjusts the width*/
+height: 20%; /*adjusts the height*/
+position: absolute; /*Allows the position to be adjusted easily*/
+top: 200%; /* sets location of image based from top */
+left: 45%; /* sets location of image based from left handside */
+}
+#arrow:hover{
+opacity: 20%; /*Reduces the opactiy allowing the user to know they have selected it*/
+}
+#arrowGrass /*Styling of arrow*/ {
+  width: 10%; /*adjusts the width*/
+  height: 20%; /*adjusts the height*/
+  position: absolute; /*Allows the position to be adjusted easily*/
+  top: 75%; /* sets location of image based from top */
+  left: 45%; /* sets location of image based from left handside */
+  }
+#arrowGrass:hover {
+opacity: 20%;
+}
+#arrowRiver /*Styling of arrow*/ {
+    width: 10%; /*adjusts the width*/
+    height: 20%; /*adjusts the height*/
+    position: absolute; /*Allows the position to be adjusted easily*/
+    top: 60%; /* sets location of image based from top */
+    left: 45%; /* sets location of image based from left handside */
+    }
+  #arrowRiver:hover {
+  opacity: 20%;
+  }
+#arrowMud1 {
+  width: 10%; /*adjusts the width*/
+  height: 20%; /*adjusts the height*/
+  position: absolute; /*Allows the position to be adjusted easily*/
+  top: 75%; /* sets location of image based from top */
+  left: 45%; /* sets location of image based from left handside */
+}
+#arrowMud1:hover {
+opacity: 20%;
+}
+#arrowMud2 {
+  width: 10%; /*adjusts the width*/
+  height: 20%; /*adjusts the height*/
+  position: absolute; /*Allows the position to be adjusted easily*/
+  top: 180%; /* sets location of image based from top */
+  left: 45%; /* sets location of image based from left handside */
+}
+#arrowMud2:hover {
+  opacity: 20%;
+  }
+#arrowForest1 {
+  width: 10%; /*adjusts the width*/
+  height: 20%; /*adjusts the height*/
+  position: absolute; /*Allows the position to be adjusted easily*/
+  top: 75%; /* sets location of image based from top */
+  left: 45%; /* sets location of image based from left handside */
+}
+#arrowForest1:hover {
+opacity: 20%;
+}
+#arrowForest2:hover {
+  opacity: 20%;;
+  }
+#arrowForest2 {
+  width: 10%; /*adjusts the width*/
+  height: 20%; /*adjusts the height*/
+  position: absolute; /*Allows the position to be adjusted easily*/
+  top: 175%; /* sets location of image based from top */
+  left: 45%; /* sets location of image based from left handside */
+}
+#arrowSnow {
+  width: 10%; /*adjusts the width*/
+  height: 20%; /*adjusts the height*/
+  position: absolute; /*Allows the position to be adjusted easily*/
+  top: 75%; /* sets location of image based from top */
+  left: 45%; /* sets location of image based from left handside */
+}
+#arrowSnow:hover {
+opacity: 20%;
+}
+#arrowCave1 {
+  width: 10%; /*adjusts the width*/
+  height: 20%; /*adjusts the height*/
+  position: absolute; /*Allows the position to be adjusted easily*/
+  top: 75%; /* sets location of image based from top */
+  left: 45%; /* sets location of image based from left handside */
+}
+#arrowCave1:hover {
+opacity: 20%;
+}
+#arrowCave2 {
+  width: 10%; /*adjusts the width*/
+  height: 20%; /*adjusts the height*/
+  position: absolute; /*Allows the position to be adjusted easily*/
+  top: 175%; /* sets location of image based from top */
+  left: 45%; /* sets location of image based from left handside */
+}
+#arrowCave2:hover {
+  opacity: 20%;
+  }
+#arrowCave3 {
+  width: 10%; /*adjusts the width*/
+  height: 20%; /*adjusts the height*/
+  position: absolute; /*Allows the position to be adjusted easily*/
+  top: 290%; /* sets location of image based from top */
+  left: 45%; /* sets location of image based from left handside */
+}
+#arrowCave3:hover {
+  opacity: 20%; /*Reduces the opactiy allowing the user to know they have selected it*/
+}
+#arrowQuick1 {
+  width: 10%; /*adjusts the width*/
+  height: 20%; /*adjusts the height*/
+  position: absolute; /*Allows the position to be adjusted easily*/
+  top: 50%; /* sets location of image based from top */
+  left: 45%; /* sets location of image based from left handside */
+}
+#arrowQuick1:hover {
+opacity: 20%;
+}
+#arrowQuick2:hover {
+  opacity: 20%;
+  }
+  
+#arrowQuick2 {
+  width: 10%; /*adjusts the width*/
+  height: 20%; /*adjusts the height*/
+  position: absolute; /*Allows the position to be adjusted easily*/
+  top: 120%; /* sets location of image based from top */
+  left: 45%; /* sets location of image based from left handside */
+}
+#arrowBH {
+  width: 10%; /*adjusts the width*/
+  height: 20%; /*adjusts the height*/
+  position: absolute; /*Allows the position to be adjusted easily*/
+  top: 75%; /* sets location of image based from top */
+  left: 20%; /* sets location of image based from left handside */
+  rotate: 280;
+}
+#arrowBH:hover {
+opacity: 20%;
+}
+#arrowBH2:hover {
+  opacity: 20%;
+  }
+#arrowBH2 {
+  width: 10%; /*adjusts the width*/
+  height: 20%; /*adjusts the height*/
+  position: absolute; /*Allows the position to be adjusted easily*/
+  top: 75%; /* sets location of image based from top */
+  left: 70%; /* sets location of image based from left handside */
+}
+
+/*CSS Key Frame animation*/
+#snow {
+  position: absolute;
+  top: 0;
+  animation-name: snow;
+  animation-duration: 5s;
+  height: 80%;
+  animation-iteration-count: infinite;
+  z-index: 1;
+  }
+  @keyframes snow {
+      from {margin-top: -10px;}
+      to {margin-top:1000px;}
+   }
+   #bats {
+    position: absolute;
+    left: 0;
+    animation-iteration-count: infinite;
+    animation-name: bats;
+    animation-duration: 2s;
+    z-index: 1;
+    width:20%;
+    height:20%;
+    }
+    #bats2 {
+      position: absolute;
+      right: 0;
+      animation-iteration-count: infinite;
+      animation-name: bats2;
+      animation-duration: 2s;
+      z-index: 1;
+      width:20%;
+      height:20%;
+      }
+    @keyframes bats {
+        from {margin-left: -20px; margin-top:20px;}
+        to {margin-left:70%; margin-top: 45%;}
+     }
+     @keyframes bats2 {
+      from {margin-right: -20px; margin-top:20px;}
+      to {margin-right:70%; margin-top: 45%;}
+   }
+
+/*Responsiveness*/
+@media screen and (max-width:1280px){ 
+  #arrowMud1 {
+    top:65%;
+    width:100px;
+    height:100px;
+    left:45%;
+    }
+    #arrowMud2 {
+      top:120%;
+      width:100px;
+      height:100px;
+      left:45%;
+    }
+    #textmud {
+      font-size: 30px;
+      width:50%;
+    }
+    #text2mud {
+      font-size: 30px;
+      width:50%;
+      top:100%;
+    }
+    #text3mud {
+      font-size: 30px;
+      width:50%;
+      top:200%;
+    }
+.text2 {
+top:130%;
+}
+#arrow {
+top:150%
+}
+#Heading {
+width:80%;
+}
+#dog {
+top:170%;
+}
+#grasstext {
+top:25%;
+}
+#arrowGrass {
+top:65%;
+}
+#rivertext {
+  top:10%;
+  font-size: 30px;
+  }
+  #rivertext2 {
+    top:10%;
+    font-size: 30px;
+    top:90%;
+    }
+#arrowRiver {
+top:25%;
+}
+#foresttext {
+font-size:60px;
+top:20%;
+}
+#foresttext2 {
+  font-size:60px;
+  top:110%;
+  }
+  #foresttext3 {
+    font-size:60px;
+    top:200%;
+    }
+#arrowForest1 {
+top:45%;
+}
+#arrowForest2 {
+  top:130%;
+  }
+#snowtext {
+font-size: 30px;
+}
+#snowtext2 {
+font-size: 30px;
+}
+#arrowSnow {
+width:100px;
+height:100px;
+top: 75%;
+}
+#cavetext{
+  top:10%;
+          }
+        #arrowCave1 {
+    width:100px;
+  height:100px;
+  top:30%;
+        }
+  #arrowCave2 {
+    width:70px;
+  height:70px;
+  top:65%;
+        }
+        #arrowCave3 {
+          width:70px;
+        height:70px;
+        top:100%;
+              }
+  #cavetext3 {
+  top:92%;
+  }
+  #cavetext4{
+  top:150%;
+  }
+  #bear {
+  top:20px;
+  width:100px;
+  height:200px;;
+  }
+  #cavetext {
+  width:60%;
+  font-size:50px;
+  }
+  #cavetext{
+    top:30%;
+            }
+          #arrowCave1 {
+      width:70px;
+    height:70px;
+    top:55%;
+          }
+    #arrowCave2 {
+      width:70px;
+    height:70px;
+    top:125%;
+          }
+          #arrowCave3 {
+            width:70px;
+          height:70px;
+          top:250%;
+                }
+
+    #cavetext4{
+    top:300%;
+    }
+    #bear {
+    top:20px;
+    width:100px;
+    height:200px;;
+    }
+    #cavetext2 {
+    top:105%;
+font-size:30px;
+width:60%;
+    }
+    #Qtext {
+      font-size:20px;
+      top:20%;
+      width:80%;
+      }
+      #arrowQuick1 {
+      width: 100px;
+      height: 100px;
+      top:40%;
+      left:42%;
+      }
+      #arrowQuick2 {
+        width: 100px;
+      height: 100px;
+        top:45%;
+        left:42%;
+        }
+        #Qtext2 {
+          font-size:20px;
+          top:400%;
+          width:80%;
+        }
+        #Qtext3 {
+          font-size:20px;
+          top:800%;
+          width:80%;
+        }
+        #NextbtnBH {
+          font-size: 10px;;
+          }
+          #PrevbtnBH {
+            font-size: 10px;;
+            }
+}
+
+
+@media screen and (max-width:1024px){
+  #Heading {
+  font-size: 50px;
+  width: 50%;
+  top:5%;
+  position: absolute;
+  }
+  .text {
+  font-size: 30px;
+  width:40%;
+  top:50%;
+  }
+  .text2 {
+    font-size: 30px;
+    width:40%;
+    top:130%;
+    }
+  .text3 {
+  font-size: 30px;
+  width:40%;
+  top:250%;
+  }
+  #arrow {
+  top: 150%;
+  width:70px;
+  height:70px;
+  left:45%;
+  }
+  #play {
+  width:100px;
+  height:100px;
+  top:30%;
+  left:45%;
+  }
+  #dog {
+  width:100px;
+  height:100px;
+  top:70%;
+  }
+  #rivertext {
+    top:15%;
+    width:80%;
+    }
+  #arrowRiver {
+  top:35%;
+  }
+  #arrowForest1 {
+    top:65%;
+    width:100px;
+    height:100px;
+    }
+  #arrowForest2 {
+    top:150%;
+    width:100px;
+    height:100px;
+    }
+  #arrowSnow {
+  width: 100px;
+  height:100px;
+  top:75%;
+  }
+  #snowtext2 {
+  top:150%;
+  }
+  #arrowCave3 {
+  top:270%;
+  }
+  #Qtext {
+    font-size:20px;
+    top:20%;
+    width:80%;
+    }
+    #arrowQuick1 {
+    width: 100px;
+    height: 100px;
+    top:40%;
+    left:42%;
+    }
+    #arrowQuick2 {
+      width: 100px;
+    height: 100px;
+      top:45%;
+      left:42%;
+      }
+      #Qtext2 {
+        font-size:20px;
+        top:400%;
+        width:80%;
+      }
+      #Qtext3 {
+        font-size:20px;
+        top:800px;
+        width:80%;
+      }
+      #NextbtnBH {
+        font-size: 10px;;
+        }
+        #PrevbtnBH {
+          font-size: 10px;;
+          }
+  }
+  
+  @media screen and (max-width:912px){
+    #Heading {
+    font-size: 50px;
+    width: 50%;
+    top:5%;
+    position: absolute;
+    }
+    .text {
+    font-size: 30px;
+    width:40%;
+    top:30%;
+    }
+    .text2 {
+      font-size: 30px;
+      width:40%;
+      top:55%;
+      }
+    .text3 {
+    font-size: 30px;
+    width:40%;
+    top:90%;
+    }
+    #arrow {
+    top: 60%;
+    width:70px;
+    height:70px;
+    left:45%;
+    }
+    #play {
+    width:100px;
+    height:100px;
+    top:15%;
+    left:45%;
+    }
+    #dog {
+    width:100px;
+    height:100px;
+    top:70%;
+    }
+    #grasstext {
+      top:15%;
+      }
+      #arrowGrass {
+      top:25%;
+      width:70px;
+      height:70px;
+      }
+      #rivertext {
+        top:3%;
+        font-size: 30px;
+        width:50%;
+        }
+        #rivertext2 {
+          top:35%;
+          font-size: 30px;
+          width:50%;
+          }
+        #arrowRiver {
+        top:10%;
+        width:70px;
+        height:70px;
+        left:45%;
+        }
+        #arrowForest1{
+          top:25%;
+          width:70px;
+          height:70px;
+          }
+        #arrowForest2 {
+          top:65%;
+          width:70px;
+          height:70px;
+          }
+        #foresttext {
+        top:15%;
+        }
+        #snowtext {
+          font-size:30px;
+          top:15%;
+          }
+          #snowtext2 {
+            font-size:30px;
+            top:70%;
+            }
+          #arrowSnow {
+          top:30%;
+          width:100px;
+          height:100px;
+          left:45%;
+          }
+        #cavetext{
+top:10%;
+        }
+      #arrowCave1 {
+  width:70px;
+height:70px;
+top:20%;
+      }
+#arrowCave2 {
+  width:70px;
+height:70px;
+top:65%;
+      }
+      #arrowCave3 {
+        width:70px;
+      height:70px;
+      top:100%;
+            }
+#cavetext3 {
+top:92%;
+}
+#cavetext4{
+top:150%;
+}
+#bear {
+top:20px;
+width:100px;
+height:200px;;
+}
+#Qtext {
+  font-size:20px;
+  top:5%;
+  width:80%;
+  }
+  #Qtext2 {
+  font-size:20px;
+  width:80%;
+  top:35%;
+  }
+  #Qtext3 {
+    font-size:20px;
+    width:80%;
+    top:70%;
+  }
+  #arrowQuick1 {
+  width: 100px;
+  height: 100px;
+  top:10%;
+  left:42%;
+  }
+  #arrowQuick2 {
+    width: 100px;
+  height: 100px;
+    top:45%;
+    left:42%;
+    }
+    #arrowMud1 {
+      top:19%;
+      width:70px;
+      height:70px;
+      left:45%;
+      }
+      #arrowMud2 {
+        top:65%;
+        width:70px;
+        height:70px;
+        left:45%;
+      }
+      #textmud {
+      top:12%;
+      }
+      #text2mud {
+        top:50%;
+      }
+      #text3mud {
+      top:90%;
+      }
+      #arrowForest1 {
+        width: 70px;
+        height:70px;
+        top:25%;
+        left: 45%;
+        }
+        #arrowForest2 {
+          width: 70px;
+          height:70px;
+          top:55%;
+          left:45%;
+          }
+        #foresttext {
+        top:11%;
+        font-size:30px; 
+        width:50%;
+        }
+        #foresttext2 {
+          top:40%;
+          font-size:30px; 
+          width:50%;
+          }
+          #foresttext3 {
+            top:85%;
+            font-size:30px; 
+            width:50%;
+            }
+            #NextbtnBH {
+              font-size: 10px;;
+              }
+              #PrevbtnBH {
+                font-size: 10px;;
+                }
+    }
+
+
+@media screen and (max-width:820px){
+#Heading {
+font-size: 50px;
+width: 50%;
+top:5%;
+position: absolute;
+}
+.text {
+font-size: 30px;
+width:40%;
+top:30%;
+}
+.text2 {
+  font-size: 30px;
+  width:40%;
+  top:55%;
+  }
+.text3 {
+font-size: 30px;
+width:40%;
+top:90%;
+}
+#arrow {
+top: 60%;
+width:70px;
+height:70px;
+left:45%;
+}
+#arrowForest1 {
+  width: 50px;
+  height:50px;
+  top:25%;
+  left: 40%;
+  }
+  #arrowForest2 {
+    width: 50px;
+    height:50px;
+    top:55%;
+    left:40%;
+    }
+  #foresttext {
+  top:11%;
+  font-size:30px; 
+  width:50%;
+  }
+  #foresttext2 {
+    top:40%;
+    font-size:30px; 
+    width:50%;
+    }
+    #foresttext3 {
+      top:70%;
+      font-size:30px; 
+      width:50%;
+      }
+#play {
+width:100px;
+height:100px;
+top:15%;
+left:45%;
+}
+#dog {
+width:100px;
+height:100px;
+top:70%;
+}
+#arrowGrass {
+top: 30%;
+width:70px;
+height:70px;
+}
+#grasstext {
+top:20%;
+}
+#rivertext {
+  top:3%;
+  font-size: 20px;
+  width:50%;
+  }
+  #rivertext2 {
+    top:35%;
+    font-size: 20px;
+    width:50%;
+    }
+  #arrowRiver {
+  top:10%;
+  width:70px;
+  height:70px;
+  left:45%;
+  }
+  #arrowForest1 {
+    width: 70px;
+    height:70px;
+    top:25%;
+    left: 45%;
+    }
+    #arrowForest2 {
+      width: 70px;
+      height:70px;
+      top:55%;
+      left:45%;
+      }
+    #foresttext {
+    top:11%;
+    }
+    #foresttext2 {
+    top:45%;
+    }
+    #foresttext3 {
+    top:85%;
+    }
+    #snowtext {
+      font-size:30px;
+      top:15%;
+      }
+      #snowtext2 {
+        font-size:30px;
+        top:65%;
+        }
+      #arrowSnow {
+      top:27%;
+      width:100px;
+      height:100px;
+      left:45%;
+      }
+      #cavetext {
+        top:10%;
+        }
+      #arrowCave1 {
+      top:25%;
+      width:70px;
+      height:70px;
+      }
+      #arrowCave2 {
+        top:65%;
+        width:70px;
+        height:70px;
+        }
+      #cavetext3 {
+      top:100%;
+      }
+      #cavetext4 {
+      font-size: 30px;
+      top:150%;
+      }
+      #arrowCave3 {
+      width:70px;
+      height:70px;
+      top:110%;
+      }
+      #bear {
+      width:100px;
+      height:200px;
+      position: absolute;
+      top:200%;
+      }
+      #Qtext {
+        font-size:20px;
+        top:5%;
+        width:80%;
+        }
+        #Qtext2 {
+        font-size:20px;
+        width:80%;
+        top:35%;
+        }
+        #Qtext3 {
+          font-size:20px;
+          width:80%;
+          top:70%;
+        }
+        #arrowQuick1 {
+        width: 100px;
+        height: 100px;
+        top:10%;
+        left:42%;
+        }
+        #arrowQuick2 {
+          width: 100px;
+        height: 100px;
+          top:45%;
+          left:42%;
+          }
+          #arrowMud1 {
+            top:19%;
+            width:70px;
+            height:70px;
+            left:45%;
+            }
+            #arrowMud2 {
+              top:65%;
+              width:70px;
+              height:70px;
+              left:45%;
+            }
+            #textmud  {
+           top:10%;
+          }
+          #text2mud {
+            top:50%;
+          }
+          #text3mud {
+          top:90%;
+          }
+          #NextbtnBH {
+            font-size: 10px;;
+            }
+            #PrevbtnBH {
+              font-size: 10px;;
+              }
+                    }
+
+
+
+@media screen and (max-width:768px){
+  #Heading {
+  font-size: 50px;
+  width: 50%;
+  top:5%;
+  position: absolute;
+  }
+  .text {
+  font-size: 30px;
+  width:40%;
+  top:30%;
+  }
+  .text2 {
+    font-size: 30px;
+    width:40%;
+    top:60%;
+    }
+  .text3 {
+  font-size: 30px;
+  width:40%;
+  top:100%;
+  }
+  #arrow {
+  top: 70%;
+  width:70px;
+  height:70px;
+  left:45%;
+  }
+  #play {
+  width:100px;
+  height:100px;
+  top:15%;
+  left:45%;
+  }
+  #dog {
+  width:100px;
+  height:100px;
+  top:70%;
+  }
+  #rivertext2 {
+    top:40%;
+    font-size: 20px;
+    width:50%;
+    }
+    #foresttext {
+      top:11%;
+      }
+      #foresttext2 {
+      top:50%;
+      }
+      #foresttext3 {
+      top:95%;
+      }
+    #arrowForest2 {
+    top:65%;
+    }
+    #snowtext {
+      font-size:30px;
+      top:15%;
+      }
+      #snowtext2 {
+        font-size:30px;
+        top:70%;
+        }
+      #arrowSnow {
+      top:30%;
+      width:100px;
+      height:100px;
+      left:45%;
+      }
+    #cavetext3 {
+    top:105%;
+    }
+    #arrowCave2 {
+    top:75%;
+    }
+    #arrowCave3 {
+      top:115%;
+      }
+      #arrowMud1 {
+        top:22%;
+        width:70px;
+        height:70px;
+        left:45%;
+        }
+        #arrowMud2 {
+          top:70%;
+          width:70px;
+          height:70px;
+          left:45%;
+        }
+        #NextbtnBH {
+          font-size: 10px;;
+          }
+          #PrevbtnBH {
+            font-size: 10px;;
+            }
+  }
+
+  @media screen and (max-width:540px){
+    #Heading {
+    font-size: 30px;
+    width: 50%;
+    top:5%;
+    position: absolute;
+    }
+    .text {
+    font-size: 20px;
+    width:40%;
+    top:30%;
+    }
+    .text2 {
+      font-size: 20px;
+      width:40%;
+      top:55%;
+      }
+    .text3 {
+    font-size: 20px;
+    width:40%;
+    top:100%;
+    }
+    #arrow {
+    top: 70%;
+    width:70px;
+    height:70px;
+    left:45%;
+    }
+    #play {
+    width:70px;
+    height:70px;
+    top:15%;
+    left:45%;
+    }
+    #dog {
+    width:100px;
+    height:100px;
+    top:70%;
+    }
+    #Prevbtn {
+    font-size: 15px;
+    }
+    #Nextbtn {
+    font-size: 15px;
+    }
+    #rivertext {
+      top:10%;
+      font-size: 20px;
+      width:50%;
+      }
+      #rivertext2 {
+        top:45%;
+        font-size: 20px;
+        width:50%;
+        }
+      #arrowRiver {
+      top:25%;
+      }
+      #snowtext {
+        font-size:20px;
+        top:15%;
+        }
+        #snowtext2 {
+          font-size:20px;
+          top:70%;
+          }
+        #arrowSnow {
+        top:30%;
+        width:100px;
+        height:100px;
+        left:45%;
+        }
+        #Qtext {
+          font-size:10px;
+          top:5%;
+          width:80%;
+          }
+          #Qtext2 {
+          font-size:10px;
+          width:80%;
+          top:35%;
+          }
+          #Qtext3 {
+            font-size:10px;
+            width:80%;
+            top:70%;
+          }
+          #arrowQuick1 {
+          width: 70px;
+          height: 70px;
+          top:10%;
+          left:42%;
+          }
+          #arrowQuick2 {
+            width: 70px;
+          height: 70px;
+            top:45%;
+            left:42%;
+            }
+            #textBH {
+              font-size: 20px;
+              }
+              #textBH2 {
+                font-size: 20px;
+                }
+                #textBH3 {
+                  font-size: 20px;
+                  }
+                  #textBH4 {
+                    font-size: 20px;
+                    }
+              #arrowBH {
+              width:50px;
+              height:50px;
+              }
+              #arrowBH2 {
+                width:50px;
+                height:50px;
+                }
+                #arrowBH3 {
+                  width:50px;
+                  height:50px;
+                  }
+                  #NextbtnBH {
+                    font-size: 10px;;
+                    }
+                    #PrevbtnBH {
+                      font-size: 10px;;
+                      }
+    }
+
+    @media screen and (max-width:414px){
+    #arrow {
+    top:47%;
+    left:40%;
+    }
+    #grasstext {
+      top:13%;
+      width:50%;
+      font-size:15px;
+      }
+    #grasstext2 {
+     top: 35%;
+     width:50%;
+     font-size:15px;
+      }
+      #arrowGrass {
+      top:17%;
+      width:70px;
+      height:70px;
+      left:40%;
+      }
+    #Nextbtn {
+    font-size:15px;
+    }
+    #Prevbtn {
+      font-size:15px;
+      }
+      #wgoabhtext {
+        top:10%;
+        }
+        #rivertext {
+          top:5%;
+          font-size: 15px;
+          width:50%;
+          }
+          #rivertext2 {
+            top:35%;
+            font-size: 15px;
+            width:50%;
+            }
+          #arrowRiver {
+          top:10%;
+          width:70px;
+          height:70px;
+          left:40%;
+          }
+          #arrowForest1 {
+            width: 50px;
+            height:50px;
+            top:45%;
+            left: 40%;
+            }
+            #arrowForest2 {
+              width: 50px;
+              height:50px;
+              top:70%;
+              left:40%;
+            }
+            #snowtext {
+              font-size:15px;
+              top:15%;
+              }
+              #snowtext2 {
+                font-size:15px;
+                top:50%;
+                }
+              #arrowSnow {
+              top:27%;
+              width:70px;
+              height:70px;
+              left:40%;
+              }
+              #cavetext {
+                font-size:15px;
+                top:10%;
+                }
+                #cavetext2 {
+                font-size:15px;
+                top:35%;
+                }
+                #cavetext3 {
+                font-size:15px;
+                top:65%;
+                  }
+                  #cavetext4 {
+                    font-size:20px;
+                    top:95%;
+                      }
+                #bear {
+                width:65px;
+                height:100px;
+                top:105%;
+                left:40%;
+                }
+                #arrowCave1 {
+                top:20%;
+                width:70px;
+                height:70px;
+                left:40%;
+                }
+                #arrowCave2 {
+                  top:45%;
+                  width:70px;
+                  height:70px;
+                  left:40%;
+                  }
+                  #arrowCave3 {
+                    top:74%;
+                    width:50px;
+                    height:50px;
+                    left:45%;
+                    }
+    #textBH {
+    font-size: 20px;
+    }
+    #textBH2 {
+      font-size: 20px;
+      }
+      #textBH3 {
+        font-size: 20px;
+        }
+        #textBH4 {
+          font-size: 20px;
+          }
+    #arrowBH {
+    width:50px;
+    height:50px;
+    }
+    #arrowBH2 {
+      width:50px;
+      height:50px;
+      }
+      #arrowBH3 {
+        width:50px;
+        height:50px;
+        }
+    #text {
+    top: 27%;
+    width:50%;
+    }
+    #play {
+    left:40%;
+    }
+    #text2 {
+    top:40%;
+    }
+    #text3 {
+      top:70%;
+      }
+    #textmud {
+    top:10%;
+    font-size:20px;
+    width:50%;
+    }
+    #text2mud {
+      top:35%;
+      font-size:20px;
+      width:50%;
+      } #text3mud {
+        top:65%;
+        font-size:20px;
+        width:50%;
+        }
+      #arrowMud1 {
+        width:70px;
+        height:70px;
+        top:20%;
+        left:40%;
+        }
+        #arrowMud2 {
+          width:70px;
+          height:70px;
+          top:42%;
+          left:40%;
+          }
+          #foresttext {
+            top:7%;
+            font-size:20px; 
+            width:50%;
+            }
+            #foresttext2 {
+              top:35%;
+              font-size:20px; 
+              width:50%;
+              }
+              #foresttext3 {
+                top:60%;
+                font-size:20px; 
+                width:50%;
+                }
+                #NextbtnBH {
+                  font-size: 10px;;
+                  }
+                  #PrevbtnBH {
+                    font-size: 10px;;
+                    }
+    }
+
+      @media screen and (max-width:412px){
+        #heading {
+          font-size: 15px;
+          width: 40%;
+          top:5%;
+          position: absolute;
+        }
+        .text {
+          font-size: 15px;
+          width:40%;
+          top:25%;
+          }
+          .text2 {
+            font-size: 15px;
+            width:40%;
+            top:40%;
+            }
+          .text3 {
+          font-size: 15px;
+          width:40%;
+          top:70%;
+          }
+          #NextbtnHome {
+          font-size: 15px;
+          }
+          #play {
+            top:15%;
+            left:45%;
+            }
+        #arrow {
+            top: 45%;
+        }
+        #dog {
+        top:45%;
+        }
+        #arrowForest1{
+          top:19%;
+          width:50px;
+          height:50px;
+          }
+        #arrowForest2 {
+          top:42%;
+          width:50px;
+          height:50px;
+          }
+        #arrowCave1 {
+        top:17%;
+        }
+        #arrowCave3 {
+          top:72%;
+          }
+      #Qtext2 {
+      top:22%;
+      }
+      #Qtext3 {
+      top:45%;
+      }
+      #arrowQuick2 {
+      top:30%;
+      }
+      #arrowMud1 {
+        top:19%;
+        }
+        #arrowMud2 {
+          top:42%;
+          width:70px;
+          height:70px;
+          left:40%;
+          }
+          #NextbtnBH {
+            font-size: 10px;;
+            }
+            #PrevbtnBH {
+              font-size: 10px;;
+              }
+    }
+  
+    @media screen and (max-width:393px){
+    #play {
+      left:40%;
+    }
+    #arrowMud1 {
+      top:19%;
+      }
+      #arrowMud2 {
+        top:42%;
+      width:70px;
+      height:70px;
+      left:40%;
+        }
+        #arrowForest2 {
+          top:44%;
+          }
+          #NextbtnBH {
+            font-size: 10px;;
+            }
+            #PrevbtnBH {
+              font-size: 10px;;
+              }
+    }
+  
+    @media screen and (max-width:390px){
+#arrowCave1 {
+top:17%;
+}
+#play {
+left:40%;
+}
+#arrowMud1 {
+top:19%;
+}
+#arrowMud2 {
+  top:42%;
+width:70px;
+height:70px;
+left:40%;
+  }
+#arrowForest2 {
+top:44%;
+}
+#NextbtnBH {
+  font-size: 10px;;
+  }
+  #PrevbtnBH {
+    font-size: 10px;;
+    }
+      }
+
+@media screen and (max-width:375px){
+#heading {
+  font-size: 20px;
+  width: 40%;
+  top:5%;
+  position: absolute;
+}
+#play {
+width:50px;
+height: 50px;
+left:40%;
+}
+#text {
+width:80%;
+}
+#text2 {
+top:45%;
+}
+#text3 {
+  top:75%;
+  }
+.text {
+  font-size: 20px;
+  width:40%;
+  top:30%;
+  }
+  .text2 {
+    font-size: 20px;
+    width:40%;
+    top:45%;
+    }
+  .text3 {
+  font-size: 20px;
+  width:40%;
+  top:80%;
+  }
+  #textmud {
+  font-size: 15px;
+  top:15%;
+  width:50%;
+  }
+  #text2mud {
+    font-size: 15px;;
+    }
+  #text3mud {
+    font-size: 15px;
+    width:50%;
+  }
+#arrowMud1 {
+width:70px;
+height:70px;
+top:22%;
+left:40%;
+}
+#arrowMud2 {
+  width:70px;
+  height:70px;
+  top:52%;
+  left:40%;
+  }
+#grasstext {
+top:13%;
+width:50%;
+font-size:15px;
+}
+#grasstext2 {
+top:40%;
+}
+#arrowGrass {
+top:20%;
+width:70px;
+height:70px;
+left:40%;
+}
+  #NextbtnHome {
+  font-size: 15px;
+  }
+  #Nextbtn {
+    font-size: 15px;
+    }
+  #Prevbtn {
+  font-size:15px;
+  }
+  #play {
+    top:18%;
+    left:45%;
+    }
+#arrow {
+    top: 55%;
+}
+#wgoabhtext {
+top:20%;
+}
+#rivertext {
+top:7%;
+font-size: 15px;
+width:50%;
+}
+#rivertext2 {
+  top:40%;
+  font-size: 15px;
+  width:50%;
+  }
+#arrowRiver {
+top:15%;
+width:70px;
+height:70px;
+left:40%;
+}
+#arrowForest1 {
+  width: 50px;
+  height:50px;
+  top:25%;
+  left: 40%;
+  }
+  #arrowForest2 {
+    width: 50px;
+    height:50px;
+    top:55%;
+    left:40%;
+    }
+  #foresttext {
+  top:11%;
+  font-size:20px; 
+  width:50%;
+  }
+  #foresttext2 {
+    top:40%;
+    font-size:20px; 
+    width:50%;
+    }
+    #foresttext3 {
+      top:70%;
+      font-size:20px; 
+      width:50%;
+      }
+#snowtext {
+font-size:15px;
+top:15%;
+}
+#snowtext2 {
+  font-size:15px;
+  top:55%;
+  }
+#arrowSnow {
+top:27%;
+width:70px;
+height:70px;
+left:40%;
+}
+#cavetext {
+font-size:15px;
+top:10%;
+}
+#cavetext2 {
+font-size:15px;
+}
+#cavetext3 {
+font-size:15px;
+  }
+  #cavetext4 {
+    font-size:20px;
+    top:110%;
+      }
+#bear {
+width:65px;
+height:100px;
+top:125%;
+left:40%;
+}
+#arrowCave1 {
+top:20%;
+width:70px;
+height:70px;
+left:40%;
+}
+#arrowCave2 {
+  top:55%;
+  width:70px;
+  height:70px;
+  left:40%;
+  }
+  #arrowCave3 {
+    top:90%;
+    width:50px;
+    height:50px;
+    left:45%;
+    }
+  #cavetext2 {
+  top:45%;
+  }
+  #cavetext3 {
+    top:80%;
+    }
+#Qtext {
+font-size:10px;
+top:5%;
+width:80%;
+}
+#Qtext2 {
+font-size:10px;
+width:80%;
+top:28%;
+}
+#Qtext3 {
+  font-size:10px;
+  width:80%;
+  top:52%;
+}
+#arrowQuick1 {
+width: 70px;
+height: 70px;
+top:10%;
+left:40%;
+}
+#arrowQuick2 {
+  width: 70px;
+  height: 70px;
+  top:35%;
+  left:40%;
+  }
+  #NextbtnBH {
+    font-size: 10px;;
+    }
+    #PrevbtnBH {
+      font-size: 10px;;
+      }
+      #NextbtnBH {
+        font-size: 10px;;
+        }
+        #PrevbtnBH {
+          font-size: 10px;;
+          }
+}
+
+@media screen and (max-width:360px){
+  #heading {
+    top:5%;
+  }
+  .text {
+    top:27%;
+    }
+    .text2 {
+      top:45%;
+      }
+    .text3 {
+    top:75%;
+    }
+    #NextbtnHome {
+    font-size: 15px;
+    }
+    #play {
+      top:18%;
+      left:45%;
+      }
+  #arrow {
+      top: 50%;
+  }
+  #wgoabhtext {
+    top:15%;
+    }
+    #arrowForest1 {
+      width: 50px;
+      height:50px;
+      top:21%;
+      left: 40%;
+      }
+      #arrowForest2 {
+        width: 50px;
+        height:50px;
+        top:45%;
+        left:40%;
+        }
+      #foresttext {
+      top:11%;
+      }
+      #foresttext2 {
+      top:35%;
+      }
+      #foresttext3 {
+      top:62%;
+      }
+    #arrowCave1 {
+    top:18%;
+    }
+    #arrowCave2 {
+      top:53%;
+      }
+    #arrowCave3 {
+    top:78%;
+    }
+    #cavetext3 {
+    top:70%;
+    }
+    #cavetext4 {
+    top:100%;
+    }
+    #bear {
+    top:110%;
+    }
+    #textmud {
+    font-size:20px;
+    width:50%;
+    top:10%;
+    }
+    #arrowMud1 {
+    top:20%;
+    }
+    #arrowMud2 {
+      top:40%;
+      }
+      #NextbtnBH {
+        font-size: 10px;;
+        }
+        #PrevbtnBH {
+          font-size: 10px;;
+          }
+  }
+
+
+  @media screen and (max-width:280px){
+    #Heading {
+    font-size: 20px;
+    width: 50%;
+    top:5%;
+    position: absolute;
+    }
+    .text {
+    font-size: 10px;
+    width:30%;
+    top:25%;
+    }
+    .text2 {
+      font-size: 10px;
+      width:30%;
+      top:35%;
+      }
+    .text3 {
+    font-size: 10px;
+    width:30%;
+    top:65%;
+    }
+    #text {
+    width:70%;
+    top:25%;
+    }
+    #text2 {
+    width:70%;
+    }
+    #text2 {
+    width:70%;
+    top:40%;
+    }
+    #text3 {
+    width:70%;
+    top:65%;
+    }
+    #arrow {
+    top: 45%;
+    width:50px;
+    height:50px;
+    left:40%;
+    }
+    #play {
+    width:50px;
+    height:50px;
+    top:15%;
+    left:40%;
+    }
+    #dog {
+    width:100px;
+    height:100px;
+    top:35%;
+    }
+    #arrowGrass {
+    width:70px;
+    height:70px
+    }
+    #Prevbtn {
+    font-size: 10px;
+    }
+    #Nextbtn {
+    font-size: 10px;
+    }
+    #grasstext {
+    font-size: 10px;
+    width:50%;
+    }
+    #grasstext2 {
+      font-size: 10px;
+      width:50%;
+      }
+    #arrowGrass {
+    width:30px;
+    height:30px;
+    top:20%;
+    left:45%;
+    }
+    #rivertext {
+      top:5%;
+      font-size: 10px;
+      width:80%;
+      }
+      #rivertext2 {
+        top:35%;
+        font-size: 10px;
+        width:80%;
+        }
+      #arrowRiver {
+      top:10%;
+      width:50px;
+      height:50px;
+      left:45%;
+      }
+    #arrowForest1 {
+    width: 50px;
+    height:50px;
+    top:17%;
+    left: 40%;
+    }
+    #arrowForest2 {
+      width: 50px;
+      height:50px;
+      top:40%;
+      left:40%;
+      }
+    #foresttext {
+    top:10%;
+    }
+    #snowtext {
+      font-size:10px;
+      top:15%;
+      }
+      #snowtext2 {
+        font-size:10px;
+        top:45%;
+        }
+      #arrowSnow {
+      top:25%;
+      width:50px;
+      height:50px;
+      left:40%;
+      }
+      #cavetext {
+        font-size:10px;
+        top:10%;
+        }
+        #cavetext2 {
+        font-size:10px;
+        }
+        #cavetext3 {
+        font-size:10px;
+          }
+          #cavetext4 {
+            font-size:10px;
+            top:110%;
+              }
+        #bear {
+        width:65px;
+        height:100px;
+        top:95%;
+        left:40%;
+        }
+        #arrowCave1 {
+        top:18%;
+        width:50px;
+        height:50px;
+        left:40%;
+        }
+        #arrowCave2 {
+          top:45%;
+          width:50px;
+          height:50px;
+          left:40%;
+          }
+          #arrowCave3 {
+            top:67%;
+            width:50px;
+            height:50px;
+            left:45%;
+            }
+          #cavetext2 {
+          top:35%;
+          }
+          #cavetext3 {
+            top:61%;
+            }
+            #cavetext4 {
+              top:90%;
+              }
+              #Qtext {
+                font-size:7px;
+                top:5%;
+                width:60%;
+                }
+                #Qtext2 {
+                  font-size:7px;
+                  top:25%;
+                  width:60%;
+                }
+                #Qtext3 {
+                  font-size:7px;
+                  width:60%;
+                  top:45%;
+                }
+                #arrowQuick1 {
+                width: 50px;
+                height: 50px;
+                top:10%;
+                left:40%;
+                }
+                #arrowQuick2 {
+                  width: 50px;
+                  height: 50px;
+                  top:30%;
+                  left:40%;
+                  }
+                  #arrowMud1 {
+                    top:18%;
+                    width:50px;
+                    height:50px;
+                    left:45%;
+                    }
+                    #arrowMud2 {
+                      top:40%;
+                      width:50px;
+                      height:50px;
+                      left:45%;
+                    }
+                    #textmud {
+                      font-size: 15px;
+                      width:70%;
+                    }
+                    #text2mud {
+                      font-size: 15px;
+                      width:70%;
+                    }
+                    #text3mud {
+                      font-size: 15px;
+                      width:70%;
+                      top:60%;
+                    }
+                    #arrowForest1 {
+                      width: 50px;
+                      height:50px;
+                      top:16%;
+                      left: 40%;
+                      }
+                      #arrowForest2 {
+                        width: 50px;
+                        height:50px;
+                        top:37%;
+                        left:40%;
+                        }
+                      #foresttext {
+                      top:11%;
+                      font-size:10px; 
+                      width:50%;
+                      }
+                      #foresttext2 {
+                        top:30%;
+                        font-size:10px; 
+                        width:50%;
+                        }
+                        #foresttext3 {
+                          top:60%;
+                          font-size:10px; 
+                          width:50%;
+                          }
+    }

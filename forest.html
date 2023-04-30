@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+</head>
+<body onload="playAudio()">
+
+<!--Audio-->
+<audio id="audioPlayer">
+  <source src="Audio/Forest.wav">
+</audio> 
+<audio id="audioPlayer2">
+  <source src="Audio/Forest2.wav">
+</audio> 
+<audio id="audioPlayer3">
+  <source src="Audio/Forest3.wav">
+</audio> 
+
+<section id="one"> 
+<img src="Images/Forest .jpeg" alt="findingforest" id="uhohforest">
+<p class="text" id="foresttext">
+Oh-oh! A FOREST!
+A big, dark forest.
+We can't go over it.
+We can't go under it. 
+</p> 
+<img onclick="document.getElementById ('two').scrollIntoView();" src="Images/Down arrow.png" alt="arrow" id="arrowForest1">
+</section>
+
+<section id="two">
+<img src="Images/Forest girl and dog.jpeg" alt="insideforest">
+<p class="text2" id="foresttext2">
+Oh, no!
+WE'VE GOT TO GO THROUGH IT! 
+</p>
+<img onclick="document.getElementById ('three').scrollIntoView();" src="Images/Down arrow.png" alt="arrow" id="arrowForest2">
+</section>
+
+<section id="three">
+<img src="Images/Forest.jpg" alt="stumbletrip">
+  <p class="text3" id="foresttext3">
+    Stumble trip!
+    Stumble trip!
+    Stumble trip!
+  </p>
+</section>
+
+<section>
+  <a href="wgoabh3.html"><button id="Prevbtn"> Previous </button></a>
+  <a href="wgoabh4.html"><button id="Nextbtn"> Next</button></a>
+</section>
+
+
+<!--Javascript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js">  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+<script>
+gsap.from ('#uhohforest', {x:'+2000' , y:200,rotation:270, duration:2 , ease:'back'})
+document.getElementById("arrowForest1").addEventListener("click",playgArrow);//Allows the down arrow image to be selected// //The event listener enables the image to be controlled by javascript//
+document.getElementById("arrowForest2").addEventListener("click",playArrow);//Allows the down arrow image to be selected// //The event listener enables the image to be controlled by javascript//
+function playgArrow() {
+    console.log ('working');
+    gsap.from ('.text2', {opacity:0, duration:1})
+    playAudio2 ()
+}
+function playArrow() { //Function created to inform browser what happens when the user clicks on the arrow//
+    gsap.from ('.text3', {opacity:0, duration:1}) //Links to GSAP animation, allowing the text to slowly appear using slow mo and the duration of 2 seconds//
+playAudio3 ()
+}
+</script>
+
+</html>
