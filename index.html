@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!--States the document type-->
+<html lang="en"> <!--States the language-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> We're Going On A Bear Hunt</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="playAudio()">
+
+  <!--Audio-->
+  <audio id="audioPlayer">
+  <source src="Audio/Opening.wav">
+  </audio> 
+  <audio id="audioPlayer2">
+  <source src="Audio/We're gonna catch a big one.wav">
+  </audio> 
+  <audio id="audioPlayer3">
+    <source src="Audio/what a beautiful day.wav">
+    </audio> 
+  
+  <audio id="dogAudio">
+    <source src="Audio/Dog bark .mp3">
+  </audio>
+  <audio id="babyAudio">
+    <source src="Audio/Baby laugh.wav">
+  </audio>
+  
+<section id="one"> <!--Beginning of section with id of one-->
+<h1 id="Heading">We're Going On A Bear Hunt</h1> <!--Heading and Title of Story-->
+<img src="Images/Beginning.jpeg" alt="story" id="beginning"> <!--Image tag-src tells the browser where the image is, alt-name of image if the image doesnt load, allows the user to see what the image should be -->
+<p class="text" id="text">We're Going On A Bear Hunt</p> <!--Paragraph-first part of text--> 
+<img onclick="document.getElementById ('two').scrollIntoView();" src="Images/25623-4-play-button-transparent-background.png" alt="Play" id="play"> <!-- Informs the browser once the play button is click to scroll to section 2-->
+</section> <!--End of section-->
+
+<img onmouseenter="playDog ()" src="Images/Dog.png" id="dog">
+
+<section id="two"> <!--Beginning of section with id of one-->
+<img onmouseenter="playBaby ()" src="Images/Background 2.jpeg" alt="Family" id="background"> <!--Second Image utilsied -->
+<p class="text2" id="text2">We're Gonna Catch A Big One</p> 
+<img onclick="document.getElementById ('three').scrollIntoView();" src="Images/Down arrow.png" alt="arrow" id="arrow">
+</section>
+
+<section id="three"> 
+  <img src="Images/Family.jpeg" alt="family" id="family">
+  <p class="text3" id="text3">What a Beautiful Day, We're Not Scared</p>
+  </section>
+
+<section>
+<a href="grass.html"><button id="NextbtnHome"> Next</button></a>
+</section>
+
+<!--Javascript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js">  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+gsap.from ('#Heading', {opacity:0, duration:5, ease: 'SlowMo'})//informs the browser that the heading needs to animate using these settings//
+gsap.from ('#beginning', {opacity:0,x:'-200%' , y:100,rotation:270, duration:5,ease:'elastic'})//informs the browser that the image needs to animate using these settings//
+document.getElementById("play").addEventListener("click",playButton);
+document.getElementById("arrow").addEventListener("click",playArrow);//Allows the down arrow image to be selected// //The event listener enables the image to be controlled by javascript//
+function playButton() {
+   gsap.from ('.text2', {opacity:0, duration: 1,})
+   playAudio2 ()
+}
+function playArrow() { //Function created to inform browser what happens when the user clicks on the arrow//
+    gsap.from ('.text3', {opacity:0, duration:1}) //Links to GSAP animation, allowing the text to slowly appear using slow mo and the duration of 2 seconds//
+playAudio3 ()
+  }
+function playgArrow() {
+    console.log ('working');
+    gsap.from ('.text2', {opacity:0, duration:1})
+}
+playDog = () => {
+    document.getElementById ("dogAudio").play();
+    }
+    stopDog = () => {
+    document.getElementById ("dogAudio").pause();
+    }
+</script>
+
+
+</body>
+</html> 

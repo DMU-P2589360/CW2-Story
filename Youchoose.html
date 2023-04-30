@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="playAudio()">
+
+    <audio id="audioPlayer">
+        <source src="Audio/You Choose.mp3">
+        </audio> 
+        <audio id="audioPlayer2">
+        <source src="Audio/Make Friends with the bear .mp3">
+        </audio> 
+        <audio id="audioPlayer3">
+            <source src="Audio/RUN AWAY.mp3">
+            </audio> 
+
+<p class=text id="YCtext"> You choose make friends with the bear or run away</p>
+
+<section id="makefriends"> 
+<a onmouseenter="playF ()" href="makefriends.html"><img src="Images/Bear.jpeg" alt="friends" id="friends"></a>
+<p id="friendstext"> Make Friends with the Bear</p>
+</section>
+
+<section id="makefriends"> 
+    <a href="quick.html"><img onmouseenter="playR ()" src="Images/Bear 2.jpeg" alt="friends" id="runaway"></a>
+    <p class=text id="runtext"> Runaway from the Bear</p>
+</section>
+
+<!--Javascript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js">  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+document.getElementById ("friends").play();
+document.getElementById ("runaway").play();
+function playF() {
+    playAudio2 () 
+}
+function playR() {
+    playAudio3 ()   
+}
+    </script>
+</body>
+</html>

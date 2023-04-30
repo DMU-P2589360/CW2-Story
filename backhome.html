@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+</head>
+<body onload="playAudio()">
+
+ <!--Audio-->
+ <audio id="audioPlayer">
+  <source src="Audio/Open the door up the stairs.wav">
+  </audio> 
+  <audio id="audioPlayer2">
+  <source src="Audio/Oh no we forgot the shut the door back downstairs.wav">
+  </audio> 
+  <audio id="audioPlayer3">
+      <source src="Audio/Under the covers.wav">
+      </audio> 
+
+<section id="one"> 
+<img src="Images/Final page.jpeg" alt="frontdoor" id="BH1">
+<p class="text" id="textBH">Get to our front door.
+Open the door.
+Up the stairs. </p>
+<img onclick="playBHArrow" src="Images/Right Arrow.png" alt="arrow" id="arrowBH"><!--image element, on click allows the browser to know what will happen when the user clicks on the image, src identify where to locate the image-->
+</section>
+
+<section id="two"> 
+<img src="Images/Final page copy 2.jpeg" alt="shutdoor" id="BH2">
+<p class="text2" id="textBH2">
+Oh no we Forgot to shut the door!
+Shut the door.
+Back upstairs.
+Into the bedroom
+</p>
+<img onclick="document.getElementById ('BH3').scrollIntoView();" src="Images/Down arrow.png" alt="arrow" id="arrowBH2">
+</section>
+
+<section id="three"> 
+<img src="Images/Final page copy 3.jpeg" alt="bed" id="BH4">
+<p class="text3" id="textBH4">Into bed.
+Under the covers.
+</p>
+</section>
+
+<section id="four">
+<img src="Images/Final page copy.jpeg" alt="we'renot" id="BH3"> 
+</section>
+
+<section>
+<a href="quick.html"><button id="PrevbtnBH"> Previous </button></a>
+<a href="theend.html"><button id="NextbtnBH"> Next</button></a>
+</section>
+
+<!--Javascript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js">  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+document.getElementById("arrowBH").addEventListener("click",playBHArrow);//Allows the down arrow image to be selected// //The event listener enables the image to be controlled by javascript//
+document.getElementById("arrowBH2").addEventListener("click", playBHArrow2);//Allows the down arrow image to be selected// //The event listener enables the image to be controlled by javascript//
+document.getElementById ("arrowBH3").addEventListener ("click",playBHArrow3);
+gsap.from ('#backhome', {x:'+2000' , y:200,rotation:270, duration:2 , ease:'bounce'})
+
+function playBHArrow() {
+console.log ('working');
+gsap.from ('#textBH2', {opacity:0,duration:2, ease: 'SlowMo'})//informs the browser that the heading needs to animate using these settings//
+playAudio2 ()
+}
+function playBHArrow2() { //Function created to inform browser what happens when the user clicks on the arrow//
+gsap.from ('#textBH4', {opacity:0,duration:2, ease: 'SlowMo'})//informs the browser that the heading needs to animate using these settings//
+playAudio3 ()
+}
+function playBHArrow3() { //Function created to inform browser what happens when the user clicks on the arrow//
+gsap.from ('#textBH3', {opacity:0,duration:2, ease: 'SlowMo'})//informs the browser that the heading needs to animate using these settings//
+}
+</script>
+
+
+</body>
+</html>
