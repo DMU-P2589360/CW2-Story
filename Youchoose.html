@@ -1,0 +1,65 @@
+<!DOCTYPE html> <!--States the document type-->
+<html lang="en"> <!--States the language-->
+<head> <!--Start of Head-->
+<meta charset="UTF-8"> <!--Specifies the text of the code, UTF 8 encouraged and most universally used -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--Most important line of the code allows it to be adjusted for mobile-->
+<title> We're Going On A Bear Hunt</title> <!--Title- labels the name of the Page-->
+<link rel="stylesheet" href="css/style.css">  <!--Links document to CSS stylesheet-->
+</head> <!--End of Head-->
+
+<body onload="playAudio()">  <!-- Informs the browser to play first audio when the page loads-->
+<!--Audio-->
+<audio id="audioPlayer"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+<source src="Audio/You Choose.mp3">  <!-- src- tells browser where the audio element is located-->
+<source src="Audio/You Choose.wav">  <!--First fallback audio-->
+<source src="Audiofallback/You Choose.mp3.m4a"> <!--Second fallback audio-->
+<p>Sadly, your browser does not support this audio. Please click <a href='Audio/You Choose.mp3'>here</a> to download an mp3 of the audio.</p> <!--Paragraph informing the user why the audio is not working, with the option to download a mp3 file--->
+</audio> <!--End of Audio Element-->
+<audio id="audioPlayer2"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+<source src="Audio/Make Friends with the bear .mp3">  <!-- src- tells browser where the audio element is located-->
+<source src="Audio/Make Friends with the bear .wav">  <!--First fallback audio-->
+<source src="Audio/Make Friends with the bear .mp3.m4a"> <!--Second fallback audio-->
+<p>Sadly, your browser does not support this audio. Please click <a href='Audio/Make Friends with the bear .mp3'>here</a> to download an mp3 of the audio.</p> <!--Paragraph informing the user why the audio is not working, with the option to download a mp3 file--->
+</audio> <!--End of Audio Element-->
+<audio id="audioPlayer3"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+<source src="Audio/RUN AWAY.mp3">  <!-- src- tells browser where the audio element is located-->
+<source src="Audio/RUN AWAY.wav">  <!--First fallback audio-->
+<source src="Audio/RUN AWAY.mp3.m4a">  <!--Second fallback audio-->
+<p>Sadly, your browser does not support this audio. Please click <a href='Audio/RUN AWAY.mp3'>here</a> to download an mp3 of the audio.</p> <!--Paragraph informing the user why the audio is not working, with the option to download a mp3 file--->
+</audio> <!--End of Audio Element-->
+
+<p class=text id="YCtext"> You choose make friends with the bear or run away</p> <!--Paragrpah Element-->
+
+<section id="makefriends"> <!--Section with ID make friends-->
+<a onmouseenter="playF ()" href="makefriends.html"><img src="Images/Bear.jpeg" alt="friends" id="friends"></a> <!--On enter tells the browser to play function whicn will play audio, anchor element containing image will link to another page-->
+<p id="friendstext"> Make Friends with the Bear</p> <!--Paragraph element-->
+</section>
+
+<section id="runawayfrombear"> <!--Section with ID runaway from bear-->
+<a href="quick.html"><img onmouseenter="playR ()" src="Images/Bear 2.jpeg" alt="friends" id="runaway"></a>  <!--On enter tells the browser to play function whicn will play audio, anchor element containing image will link to another page-->
+<p class=text id="runtext"> Runaway from the Bear</p> <!--Paragraph element-->
+</section>
+
+<section> <!--Section Containg Prev Button-->
+<a href="cave.html"><button id="PrevbtnYC"> Previous</button></a> <!-- Anchor element containing next button linking to the next page-->
+</section> <!--End of section-->
+
+<!--Javascript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js">  </script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"> </script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="js/script.js"></script> <!-- Linking to script document-->
+<script> //Start of script
+document.getElementById ("friends").play(); //Links image and tells it to play audio when hovered 
+document.getElementById ("runaway").play(); //Links image and tells it to play audio when hovered 
+function playF() { //Function created to play audio 
+    playAudio2 () //When ran it will play Audio 2
+}
+function playR() { //Function created to play audio 
+    playAudio3 ()  //When ran it will play Audio 3
+}
+    </script> <!--End of Script-->
+
+</body> <!--End of Body-->
+</html> <!--End of HTML-->

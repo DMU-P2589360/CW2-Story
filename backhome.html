@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!--States the document type as html-->
+<html lang="en"> <!-- States the language as english-->
+<head> <!--Start of Head-->
+    <meta charset="UTF-8"> <!--Specifies the text of the code, UTF 8 encouraged and most universally used -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Most important line of the code allows it to be adjusted for mobile-->
+    <title>Back Home</title> <!--Title- labels the name of the Page-->
+    <link rel="stylesheet" href="css/style.css"> <!-- Links the page to CSS style sheet-->
+</head> <!--End of head-->
+
+<body onload="playAudio()"> <!-- Informs the browser to play first audio when the page loads-->
+ <!--Audio-->
+ <audio id="audioPlayer"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+<source src="Audio/Open the door up the stairs.wav"> <!-- src- tells browser where the audio element is located-->
+<source src="Audio/Open the door up the stairs.mp3"> <!--First fallback audio-->
+<source src="Audiofallback/Open the door up the stairs.mp3.m4a"> <!--Second fallback audio-->
+<p>Sadly, your browser does not support this audio. Please click <a href='Audio/Open the door up the stairs.mp3'>here</a> to download an mp3 of the audio.</p> <!--Paragraph informing the user why the audio is not working, with the option to download a mp3 file-->
+</audio> <!--End of audio element-->
+<audio id="audioPlayer2"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+<source src="Audio/Oh no we forgot the shut the door back downstairs.wav"><!-- src- tells browser where the audio element is located-->
+<source src="Audiofallback/Oh no we forgot the shut the door back downstairs.mp3.m4a"> <!--First fallback audio-->
+<source src="Audio/Oh no we forgot the shut the door back downstairs.wav"> <!--Second fallback audio-->
+<p>Sadly, your browser does not support this audio. Please click <a href='Audio/Oh no we forgot the shut the door back downstairs.mp3'>here</a> to download an mp3 of the audio.</p> <!--Paragraph informing the user why the audio is not working, with the option to download a mp3 file--->
+</audio> <!--End of audio element-->
+<audio id="audioPlayer3"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+<source src="Audio/Under the covers.wav"><!-- src- tells browser where the audio element is located-->
+<source src="Audiofallback/Under the covers.mp3.m4a"> <!--First fallback audio-->
+<source src="Audio/Under the covers.mp3"><!--Second fallback audio-->
+<p>Sadly, your browser does not support this audio. Please click <a href='Audio/Under the covers.mp3'>here</a> to download an mp3 of the audio.</p> <!--Paragraph informing the user why the audio is not working, with the option to download a mp3 file--->
+</audio> <!--End of audio element-->
+
+<section id="one"> <!--First section containing the images and text-->
+<img src="Images/Final page.jpeg" alt="frontdoor" id="BH1"> <!--Image of background, src tells browser where to find it, alt- text displayed if image doesnt load, id- allows it to be styled seperately -->
+<p class="text" id="textBH">Get to our front door. <!-- Paragraph containing the text, Class allows all text to be styled the same, id allows it to be styled seperately if required-->
+Open the door.
+Up the stairs. </p> <!--End of paragraph-->
+<img onclick="playBHArrow" src="Images/Right Arrow.png" alt="arrow" id="arrowBH"><!--image element, on click allows the browser to know what will happen when the user clicks on the image, src identify where to locate the image-->
+</section> <!--End of section-->
+
+<section id="two"> <!-- Second section containing the images and text-->
+<img src="Images/Final page copy 2.jpeg" alt="shutdoor" id="BH2"> <!--Image of background, src tells browser where to find it, alt- text displayed if image doesnt load, id- allows it to be styled seperately -->
+<p class="text2" id="textBH2"> <!-- Paragraph containing the text, Class allows all text to be styled the same, id allows it to be styled seperately if required-->
+Oh no we Forgot to shut the door!
+Shut the door.
+Back upstairs.
+Into the bedroom
+</p> <!--End of paragraph-->
+<img onclick="document.getElementById ('BH3').scrollIntoView();" src="Images/Down arrow.png" alt="arrow" id="arrowBH2"> <!--image element, on click allows the browser to know what will happen when the user clicks on the image, src identify where to locate the image-->
+</section> <!--End of section-->
+
+<section id="three"> <!-- Third section containing the images and text-->
+<img src="Images/Final page copy 3.jpeg" alt="bed" id="BH4"> <!--Image of background, src tells browser where to find it, alt- text displayed if image doesnt load, id- allows it to be styled seperately -->
+<p class="text3" id="textBH4">Into bed. <!-- Paragraph containing the text, Class allows all text to be styled the same, id allows it to be styled seperately if required-->
+Under the covers.</p> <!--End of paragraph-->
+</section> <!--End of section-->
+
+<section id="four"> <!-- Fourth section containing image -->
+<img src="Images/Final page copy.jpeg" alt="" id="BH3"> <!--Image of background, src tells browser where to find it, alt- text displayed if image doesnt load, id- allows it to be styled seperately -->
+</section> <!--End of section-->
+
+<section> <!--Start of section containing next and previous button-->
+<a href="quick.html"><button id="PrevbtnBH"> Previous </button></a> <!-- Anchor element containing previous button linking to the previous page-->
+<a href="theend.html"><button id="NextbtnBH"> Next</button></a><!-- Anchor element containing next button linking to the next page-->
+</section>
+
+<!--Javascript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js">  </script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"> </script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="js/script.js"></script> <!-- Linking to script document-->
+
+<script>
+document.getElementById("arrowBH").addEventListener("click",playBHArrow);//Allows the down arrow image to be selected, The event listener enables the image to be controlled by javascript, Tells the browser to run function stated
+document.getElementById("arrowBH2").addEventListener("click", playBHArrow2);//Allows the down arrow image to be selected, The event listener enables the image to be controlled by javascript, Tells the browser to run function stated
+document.getElementById ("arrowBH3").addEventListener ("click",playBHArrow3); //Allows the down arrow image to be selected, The event listener enables the image to be controlled by javascript, Tells the browser to run function stated
+gsap.from ('#backhome', {x:'+2000' , y:200,rotation:270, duration:2 , ease:'bounce'}) //GSAP animation controls the animation of main image tells to to come on from right side, rotate, bounce duration of 2
+
+function playBHArrow() { //Controls first arrow 
+console.log ('working'); //Allows you to check the function is working correctly
+gsap.from ('#textBH2', {opacity:0,duration:2, ease: 'SlowMo'})//informs the browser that the text needs to animate using these settings//
+playAudio2 () //Informs the browser to run this function which will play the second audio
+stopAudio () // Stops audio so there is no chance of it playing stimultaneously
+}
+function playBHArrow2() { //Function created to inform browser what happens when the user clicks on the arrow
+gsap.from ('#textBH4', {opacity:0,duration:2, ease: 'SlowMo'})//informs the browser that the text needs to animate using these settings//
+playAudio3 () //Informs the browser to run this function which will play the third audio
+stopAudio2 () // Stops audio so there is no chance of it playing stimultaneously
+}
+function playBHArrow3() { //Function created to inform browser what happens when the user clicks on the arrow//
+gsap.from ('#textBH3', {opacity:0,duration:2, ease: 'SlowMo'})//informs the browser that the text needs to animate using these settings//
+} 
+</script> <!-- End of script-->
+
+</body> <!-- End of body-->
+</html> <!--End of HTMl-->

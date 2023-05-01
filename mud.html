@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!--States the document type-->
+<html lang="en"> <!--States the language-->
+<head> <!--Start of Head-->
+    <meta charset="UTF-8"> <!--Specifies the text of the code, UTF 8 encouraged and most universally used -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Most important line of the code allows it to be adjusted for mobile-->
+    <title>Mud</title> <!--Title- labels the name of the Page-->
+    <link rel="stylesheet" href="css/style.css"> <!-- Links the page to CSS style sheet-->
+</head>
+
+<body onload="playAudio()"> <!-- Informs the browser to play first audio when the page loads-->
+<!--Audio-->
+<audio id="audioPlayer"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+<source src="Audio/Mud.wav"> <!-- src- tells browser where the audio element is located-->
+<source src="Audio/Mud.mp3"> <!--First fallback audio-->
+<source src="Audiofallback/Mud.mp3.m4a"> <!--Second fallback audio-->
+<p>Sadly, your browser does not support this audio. Please click <a href='Audio/Mud.mp3'>here</a> to download an mp3 of the audio.</p> <!--Paragraph informing the user why the audio is not working, with the option to download a mp3 file--->
+</audio>  <!--End of audio element-->
+<audio id="audioPlayer2"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+<source src="Audio/Mud2.wav"> <!-- src- tells browser where the audio element is located-->
+<source src="Audio/Mud2.mp3"> <!--First fallback audio-->
+<source src="Audiofallback/Mud2.mp3.m4a"> <!--Second fallback audio-->
+<p>Sadly, your browser does not support this audio. Please click <a href='Audio/Mud2.mp3'>here</a> to download an mp3 of the audio.</p> <!--Paragraph informing the user why the audio is not working, with the option to download a mp3 file--->
+</audio>  <!--End of audio element-->
+<audio id="audioPlayer3"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+<source src="Audio/Mud3.wav"><!-- src- tells browser where the audio element is located-->
+<source src="Audio/Mud3.mp3"> <!--First fallback audio-->
+<source src="Audiofallback/Mud3.mp3.m4a"> <!--Second fallback audio-->
+<p>Sadly, your browser does not support this audio. Please click <a href='Audio/Mud3.mp3'>here</a> to download an mp3 of the audio.</p> <!--Paragraph informing the user why the audio is not working, with the option to download a mp3 file--->
+</audio>  <!--End of audio element-->
+
+<section id="one"> <!--Beginning of section with id of one-->
+<img src="Images/Mud oh no.jpg" alt="mud" id="mud1"> <!--Image tag-src tells the browser where the image is, alt-name of image if the image doesnt load, allows the user to see what the image should be -->
+<p class=text id="textmud"> <!-- Paragraph containing the text, Class allows all text to be styled the same, id allows it to be styled seperately if required-->
+    Oh-oh! MUD!
+    Thick, oozy mud
+    We can't go over it.
+    We can't go under it.
+</p> <!--End of paragraph element-->
+<img onclick="document.getElementById ('two').scrollIntoView();" src="Images/Down arrow.png" alt="arrow" id="arrowMud1"> <!--image element, on click allows the browser to know what will happen when the user clicks on the image, src identify where to locate the image-->
+</section>  <!--End of section-->
+
+<section id="two"> <!--Beginning of section with id of two-->
+<img src="Images/Mud start.jpeg" alt="throughmud" id="mud2"> <!--Image tag-src tells the browser where the image is, alt-name of image if the image doesnt load, allows the user to see what the image should be -->
+<p class=text2 id="text2mud"> <!-- Paragraph containing the text, Class allows all text to be styled the same, id allows it to be styled seperately if required-->
+    Oh, no!
+    WE'VE GOT TO GO THROUGH IT!   
+</p> <!--End of paragraph element-->
+<img onclick="document.getElementById ('three').scrollIntoView();" src="Images/Down arrow.png" alt="arrow" id="arrowMud2"> <!--image element, on click allows the browser to know what will happen when the user clicks on the image, src identify where to locate the image-->
+</section> <!--End of section-->
+
+<section id="three"> <!--Beginning of section with id of two-->
+<img src="Images/Mud.jpeg" alt="mud3"> <!--Image tag-src tells the browser where the image is, alt-name of image if the image doesnt load, allows the user to see what the image should be -->
+<p class=text3 id="text3mud"> <!-- Paragraph containing the text, Class allows all text to be styled the same, id allows it to be styled seperately if required-->
+    Squelch squerch!
+    Squelch squerch!
+    Squelch squerch!
+</p> <!--End of paragraph element-->
+</section> <!--End of section-->
+
+<section>  <!--Section Containg Next and Previous Button-->
+    <a href="wgoabh2.html"><button id="Prevbtn"> Previous </button></a> <!-- Anchor element containing next button linking to the previous page-->
+    <a href="wgoabh3.html"><button id="Nextbtn"> Next</button></a> <!-- Anchor element containing next button linking to the next page-->
+</section> <!--End of section-->
+
+<!--Javascript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js">  </script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"> </script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="js/script.js"></script> <!-- Linking to script document-->
+<script>
+    gsap.from ('#mud1', {x:'-2000' , y:200,rotation:270, duration:2 , ease:'rough'}) //GSAP animation controls the animation of main image tells to to come on from right side, rotate, duration of 2
+    document.getElementById ("arrowMud1").addEventListener ("click",playgArrow); //Allows the down arrow image to be selected, The event listener enables the image to be controlled by javascript, Tells the browser to run function stated
+    document.getElementById ("arrowMud2").addEventListener ("click",playArrow); //Allows the down arrow image to be selected, The event listener enables the image to be controlled by javascript, Tells the browser to run function stated
+    function playgArrow() { //Function created to inform browser what happens when the user clicks on the arrow//
+        console.log ('working'); //Allows you to check the function is working correctly
+        gsap.from ('.text2', {opacity:0, duration:1}) //Links to GSAP animation, allowing the text to appear with a duration of 1 second//
+        playAudio2 () //Informs the browser to run this function which will play the Second audio
+        stopAudio ()// Stops audio so there is no chance of it playing stimultaneously
+    }
+    function playArrow() { //Function created to inform browser what happens when the user clicks on the arrow//
+        gsap.from ('.text3', {opacity:0, duration:1}) //Links to GSAP animation, allowing the text to appear with a duration of 1 second//
+    playAudio3 () //Informs the browser to run this function which will play the Third audio
+    stopAudio2() // Stops audio so there is no chance of it playing stimultaneously
+    }
+    </script> <!--End of Script-->
+</body> <!-- End of body -->
+</html> <!--End of HTML-->

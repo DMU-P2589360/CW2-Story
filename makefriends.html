@@ -1,0 +1,36 @@
+<!DOCTYPE html> <!--States the document type-->
+<html lang="en"> <!--States the language-->
+<head> <!--Start of Head-->
+    <meta charset="UTF-8"> <!--Specifies the text of the code, UTF 8 encouraged and most universally used -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Most important line of the code allows it to be adjusted for mobile-->
+    <title> Make Friends with the bear </title> <!--Title- labels the name of the Page-->
+    <link rel="stylesheet" href="css/style.css"> <!-- Links the page to CSS style sheet-->
+</head> <!--End of Head-->
+
+<body onload="playAudio()"> <!-- Informs the browser to play first audio when the page loads-->
+<audio id="audioPlayer"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+<source src="Audio/You are now friends with the bear.mp3"> <!-- src- tells browser where the audio element is located-->
+<source src="Audio/You are now friends with the bear.wav"> <!--First fallback audio-->
+<source src="Audiofallback/You are now friends with the bear.mp3.m4a"> <!--Second fallback audio-->
+<p>Sadly, your browser does not support this audio. Please click <a href='Audio/You are now friends with the bear.mp3'>here</a> to download an mp3 of the audio.</p> <!--Paragraph informing the user why the audio is not working, with the option to download a mp3 file--->
+</audio> <!--End of Audio element-->
+
+<section id="one"> <!--Beginning of section with id of one-->
+<p class="text"> You Make Friends With the Bear</p> <!-- Paragraph containing the text, Class allows all text to be styled the same, id allows it to be styled seperately if required-->
+<img src="Images/Bear friends with the girl.png" alt="story" id="friendswithbear"> <!--Image tag-src tells the browser where the image is, alt-name of image if the image doesnt load, allows the user to see what the image should be -->
+<a href="index.html"><button id="NextbtnEnd"> The End</button></a> <!--Anchor element containing The End button taking the user back to the first page-->
+</section> <!--End of section-->
+
+<section> <!--Section Containg Prev Button-->
+<a href="Youchoose.html"><button id="PrevbtnYC"> Previous </button></a> <!-- Anchor element containing next button linking to the next page-->
+</section> <!--End of section-->
+
+<!--Javascript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js">  </script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"> </script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="js/script.js"></script> <!-- Linking to script document-->
+
+</body> <!--End of body-->
+</html> <!--End of HTML--> 

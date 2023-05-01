@@ -1,0 +1,43 @@
+<!DOCTYPE html> <!--States the document type-->
+<html lang="en"> <!--States the language-->
+<head> <!--Start of Head-->
+    <meta charset="UTF-8"> <!--Specifies the text of the code, UTF 8 encouraged and most universally used -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--Most important line of the code allows it to be adjusted for mobile-->
+    <title> We're Going On A Bear Hunt</title> <!--Title- labels the name of the Page-->
+    <link rel="stylesheet" href="css/style.css">  <!--Links document to CSS stylesheet-->
+</head> <!--End of Head-->
+
+<body onload="playAudio()"> <!-- Informs the browser to play first audio when the page loads-->
+    <!--Audio-->
+    <audio id="audioPlayer"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+    <source src="Audio/WGOABH.wav"> <!-- src- tells browser where the audio element is located-->
+    <source src="Audio/WGOABH.mp3"> <!--First fallback audio-->
+    <source src="Audiofallback/WGOABH.mp3.m4a"> <!--Second fallback audio-->
+    <p>Sadly, your browser does not support this audio. Please click <a href='Audio/WGOABH.mp3'>here</a> to download an mp3 of the audio.</p> <!--Paragraph informing the user why the audio is not working, with the option to download a mp3 file--->
+    </audio>  <!--End of Audio Element-->
+
+<img src="Images/Beginning.jpeg" alt="family" id="wgoabh"> <!--Image tag-src tells the browser where the image is, alt-name of image if the image doesnt load, allows the user to see what the image should be -->
+<p class="text" id="wgoabhtext"> <!-- Paragraph containing the text, Class allows all text to be styled the same, id allows it to be styled seperately if required-->
+    We're going on a Bear Hunt!
+    We're going to catch a big one.
+    What a beautiful day.
+    WE'RE NOT SCARED.
+</p> <!--End of paragraph-->
+
+<section id="WGOABHbtns"> <!--Section Containg Next and Previous Button-->
+    <a href="river.html"><button id="PrevbtnWGOABH""> Previous </button></a>  <!-- Anchor element containing previous button linking to the previous page-->
+    <a href="mud.html"><button id="NextbtnWGOABH"> Next</button></a>  <!-- Anchor element containing next button linking to the next page-->
+</section> <!--End of Section-->
+
+<!--Javascript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js">  </script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"> </script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="js/script.js"></script> <!-- Linking to script document-->
+<script> //Start of script
+gsap.from ('#wgoabh', {x:'+2000' , y:200,rotation:270, duration:2 , ease:'bounce'})  //GSAP animation controls the animation of main image tells to to come on from side, rotate, duration of 2 
+</script> <!--End of Script-->
+
+</body> <!--End of Body-->
+</html> <!--End of HTML-->

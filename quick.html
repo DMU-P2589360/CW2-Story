@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!--States the document type-->
+<html lang="en"> <!--States the language-->
+<head>  <!--Start of Head-->
+    <meta charset="UTF-8"> <!--Specifies the text of the code, UTF 8 encouraged and most universally used -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Most important line of the code allows it to be adjusted for mobile-->
+    <title>Quick</title> <!--Title- labels the name of the Page-->
+    <link rel="stylesheet" href="css/style.css"> <!-- Links the page to CSS style sheet-->
+</head> <!--End of Head-->
+
+<body onload="playAudio()"><!-- Informs the browser to play first audio when the page loads-->
+<!--Audio-->
+<audio id="audioPlayer"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+<source src="Audio/Quick1.wav"> <!-- src- tells browser where the audio element is located-->
+<source src="Audio/Quick1.mp3"> <!--First fallback audio-->
+<source src="Audiofallback/Quick1.mp3.m4a"> <!--Second fallback audio-->
+<p>Sadly, your browser does not support this audio. Please click <a href='Audio/Quick1.mp3'>here</a> to download an mp3 of the audio.</p> <!--Paragraph informing the user why the audio is not working, with the option to download a mp3 file--->
+</audio>  <!--End of Audio Element-->
+<audio id="audioPlayer2"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+<source src="Audio/Quick2.wav"> <!-- src- tells browser where the audio element is located-->
+<source src="Audio/Quick2.mp3"> <!--First fallback audio-->
+<source src="Audiofallback/Quick2.mp3.m4a"> <!--Second fallback audio-->
+<p>Sadly, your browser does not support this audio. Please click <a href='Audio/Quick2.mp3'>here</a> to download an mp3 of the audio.</p> <!--Paragraph informing the user why the audio is not working, with the option to download a mp3 file--->
+</audio> <!--End of Audio Element-->
+<audio id="audioPlayer3"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+<source src="Audio/Quick3.wav"> <!-- src- tells browser where the audio element is located-->
+<source src="Audio/Quick3.mp3"> <!--First fallback audio-->
+<source src="Audiofallback/Quick3.mp3.m4a"><!--Second fallback audio-->
+<p>Sadly, your browser does not support this audio. Please click <a href='Audio/Quick3.mp3'>here</a> to download an mp3 of the audio.</p> <!--Paragraph informing the user why the audio is not working, with the option to download a mp3 file--->
+</audio> <!--End of Audio Element-->
+
+<section id="one"> <!--Beginning of section with id of one-->
+<img src="Images/Quick back through cave.jpeg" alt="quickcave" id="Quick"> <!--Image tag-src tells the browser where the image is, alt-name of image if the image doesnt load, allows the user to see what the image should be -->
+<img src="Images/Quick back through snowstorm.jpeg" alt="quicksnow"> <!--Image tag-src tells the browser where the image is, alt-name of image if the image doesnt load, allows the user to see what the image should be -->
+<p class="text" id="Qtext">Quick back through the CAVE! Tiptoe! Tiptoe! Tiptoe! <!-- Paragraph containing the text, Class allows all text to be styled the same, id allows it to be styled seperately if required-->
+    <br> <!--Page Break to Break up text-->
+Back through the SNOWSTORM! Hooo wooo! Hooo wooo! Hooo wooo!</p>  <!--End of Paragraph-->
+<img onclick="document.getElementById ('two').scrollIntoView();" src="Images/Down arrow.png" alt="arrow" id="arrowQuick1"><!--image element, on click allows the browser to know what will happen when the user clicks on the image, src identify where to locate the image-->
+</section> <!--End of Section-->
+
+<section id="two"> <!--Beginning of section with id of two-->
+<img src="Images/Quick back through forest.jpeg" alt="quickforest" id="2f"> <!--Image tag-src tells the browser where the image is, alt-name of image if the image doesnt load, allows the user to see what the image should be -->
+<img src="Images/Quick back through mud.jpeg" alt="quickmud" id="2m"> <!--Image tag-src tells the browser where the image is, alt-name of image if the image doesnt load, allows the user to see what the image should be -->
+<p class="text2" id="Qtext2">Back through the FOREST! Stumble trip! Stumble trip! Stumble trip! <!-- Paragraph containing the text, Class allows all text to be styled the same, id allows it to be styled seperately if required-->
+<br> <!--Page Break to Break up text-->
+Back through the MUD! Squelch! Squelch! Squelch!</p>  <!--End of Paragraph-->
+<img onclick="document.getElementById ('three').scrollIntoView();" src="Images/Down arrow.png" alt="arrow" id="arrowQuick2"> <!--image element, on click allows the browser to know what will happen when the user clicks on the image, src identify where to locate the image-->
+</section> <!--End of Section-->
+
+<section id="three"> <!--Beginning of section with id of three-->
+<img src="Images/Quick back through river.jpeg" alt="quickriver" id="3r"> <!--Image tag-src tells the browser where the image is, alt-name of image if the image doesnt load, allows the user to see what the image should be -->
+<img src="Images/Quick back through grass.jpeg" alt="quickgrass" id="3g"> <!--Image tag-src tells the browser where the image is, alt-name of image if the image doesnt load, allows the user to see what the image should be -->
+<p class="text3" id="Qtext3">Back through the RIVER! Splash splosh! Splash splosh! Splash splosh! <!-- Paragraph containing the text, Class allows all text to be styled the same, id allows it to be styled seperately if required--> 
+<br> <!--Page Break to Break up text-->
+Back through the GRASS! Swishy swashy! Swishy swashy!</p>  <!--End of Paragraph-->
+</section> <!--End of Section-->
+
+<section> <!--Section Containg Next and Previous Button-->
+<a href="cave.html"><button id="Prevbtn"> Previous </button></a> <!-- Anchor element containing previous button linking to the previous page-->
+<a href="backhome.html"><button id="Nextbtn"> Next</button></a> <!-- Anchor element containing next button linking to the previous page-->
+</section> <!--End of Section-->
+
+<!--Javascript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js">  </script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"> </script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="js/script.js"></script> <!-- Linking to script document-->
+<script>
+document.getElementById("arrowQuick1").addEventListener("click",playgArrow);//Allows the down arrow image to be selected// //The event listener enables the image to be controlled by javascript//
+document.getElementById("arrowQuick2").addEventListener("click",playArrow);//Allows the down arrow image to be selected// //The event listener enables the image to be controlled by javascript//
+document.getElementById("arrowQuick3").addEventListener("click", playArrow);//Allows the down arrow image to be selected// //The event listener enables the image to be controlled by javascript//
+gsap.from ('#uhohcave', {x:'+2000' , y:200,rotation:270, duration:2 , ease:'bounce'}) //GSAP animation controls the animation of main image tells to to come on from side, rotate, duration of 2 and bounce
+function playgArrow() { //Function created to inform browser what happens when the user clicks on the arrow//
+    playAudio2 () //Informs the browser to run this function which will play the Second audio
+    stopAudio () // Stops audio so there is no chance of it playing stimultaneously
+    gsap.from ('#Qtext2', {opacity:0, duration:1}) //Links to GSAP animation, allowing the text to appear with a duration of 1 second//
+    gsap.from ('#2m', {opacity:0,duration:2, ease: 'SlowMo'}) //Links to GSAP animation, allowing the text to slowly appear using slow mo and the duration of 2 seconds//
+    gsap.from ('#2f', {opacity:0,duration:2, ease: 'SlowMo'}) //Links to GSAP animation, allowing the text to slowly appear using slow mo and the duration of 2 seconds//
+}
+function playArrow() { //Function created to inform browser what happens when the user clicks on the arrow//
+    playAudio3 () //Informs the browser to run this function which will play the Second audio
+    gsap.from ('#Qtext3', {opacity:0, duration:1}) //Links to GSAP animation, allowing the text to slowly appear using slow mo and the duration of 2 seconds//
+    gsap.from ('#3r', {opacity:0,duration:2, ease: 'SlowMo'}) //Links to GSAP animation, allowing the text to slowly appear using slow mo and the duration of 2 seconds//
+    gsap.from ('#3g', {opacity:0,duration:2, ease: 'SlowMo'}) //Links to GSAP animation, allowing the text to slowly appear using slow mo and the duration of 2 seconds//
+playAudio3 () //Informs the browser to run this function which will play the Third audio
+stopAudio2 ()// Stops audio so there is no chance of it playing stimultaneously
+}
+</script> <!--End of Script-->
+
+</body> <!--End of body-->
+</html> <!--End of HTML-->

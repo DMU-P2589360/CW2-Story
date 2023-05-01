@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!--States the document type-->
+<html lang="en"> <!--States the language-->
+<head> <!--Start of Head-->
+    <meta charset="UTF-8">  <!--Specifies the text of the code, UTF 8 encouraged and most universally used -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Most important line of the code allows it to be adjusted for mobile-->
+    <title>River</title> <!--Title- labels the name of the Page-->
+    <link rel="stylesheet" href="css/style.css"><!--Links document to CSS stylesheet-->
+</head> <!--End of Head-->
+
+<body onload="playAudio()"><!-- Informs the browser to play first audio when the page loads-->
+<!--Audio-->
+<audio id="audioPlayer"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+<source src="Audio/River1.wav"> <!-- src- tells browser where the audio element is located-->
+<source src="Audio/River1.mp3"> <!--First fallback audio-->
+<source src="Audiofallback/River1.mp3.m4a"> <!--Second fallback audio-->
+<p>Sadly, your browser does not support this audio. Please click <a href='Audio/Quick1.mp3'>here</a> to download an mp3 of the audio.</p> <!--Paragraph informing the user why the audio is not working, with the option to download a mp3 file--->
+</audio> <!--End of Audio Element-->
+<audio id="audioPlayer2"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+<source src="Audio/River 2.wav"> <!-- src- tells browser where the audio element is located-->
+<source src="Audio/River 2.mp3"><!--First fallback audio-->
+<source src="Audiofallback/River 2.mp3.m4a"><!--Second fallback audio-->
+<p>Sadly, your browser does not support this audio. Please click <a href='Audio/Quick2.mp3'>here</a> to download an mp3 of the audio.</p> <!--Paragraph informing the user why the audio is not working, with the option to download a mp3 file--->
+</audio>  <!--End of Audio Element-->
+    
+<section id="One"> <!--Beginning of section with id of one-->
+<img src="Images/River oh no.jpeg" alt="uhohriver" id="uhohriver">  <!--Image tag-src tells the browser where the image is, alt-name of image if the image doesnt load, allows the user to see what the image should be -->
+<p class="text" id="rivertext"> <!-- Paragraph containing the text, Class allows all text to be styled the same, id allows it to be styled seperately if required-->
+    Uh-oh! A RIVER!
+    A deep, cold river.
+    We can't go over it.
+    We can't go under it.
+</p> <br> <!--Page Break to Break up text-->
+<img onclick="document.getElementById ('two').scrollIntoView();" src="Images/Down arrow.png" alt="arrow" id="arrowRiver"> <!--image element, on click allows the browser to know what will happen when the user clicks on the image, src identify where to locate the image-->
+</section> <!--End of section-->
+
+<section id="two">
+<img src="Images/newriver.jpeg" alt="throughriver" id="river"> <!--Image tag-src tells the browser where the image is, alt-name of image if the image doesnt load, allows the user to see what the image should be -->
+<p class="text2" id="rivertext2"> <!-- Paragraph containing the text, Class allows all text to be styled the same, id allows it to be styled seperately if required-->
+Oh, no!
+WE'VE GOT TO GO THROUGH IT!    
+Splash splosh!
+Splash splosh!
+Splash splosh!
+</p> <br> <!--Page Break to Break up text-->
+</section> <!--End of section-->
+
+<section> <!--Section Containg Next and Previous Button-->
+<a href="wgoabh1.html"><button id="Prevbtn"> Previous </button></a>  <!-- Anchor element containing previous button linking to the previous page-->
+<a href="wgoabh2.html"><button id="Nextbtn"> Next</button></a>  <!-- Anchor element containing next button linking to the next page-->
+</section>
+
+<!--Javascript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js">  </script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"> </script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="js/script.js"></script> <!-- Linking to script document-->
+<script>
+document.getElementById("arrowRiver").addEventListener("click",playgArrow);//Allows the down arrow image to be selected// //The event listener enables the image to be controlled by javascript//
+gsap.from ('#uhohriver', {x:'+2000' , y:200,rotation:270, duration:2 , ease:'sine'}) //GSAP animation controls the animation of main image tells to to come on from side, rotate, duration of 2 
+function playgArrow() { //Function created to inform browser what happens when the user clicks on the arrow//
+    console.log ('working'); //Allows you to check the function is working correctly
+    gsap.from ('.text2', {opacity:0, duration:1}) //Links to GSAP animation, allowing the text to slowly appear//
+   playAudio2 () //Informs the browser to run this function which will play the Second audio
+   stopAudio ()// Stops audio so there is no chance of it playing stimultaneously
+}
+function playArrow() { //Function created to inform browser what happens when the user clicks on the arrow//
+    gsap.from ('.text3', {opacity:0, duration:1}) //Links to GSAP animation, allowing the text to slowly appear//
+}
+</script><!--End of Script-->
+    
+</body><!--End of body-->
+</html> <!--End of HTML-->

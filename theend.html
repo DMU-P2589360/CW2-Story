@@ -1,0 +1,33 @@
+<!DOCTYPE html>  <!--States the document type-->
+<html lang="en"> <!--States the language-->
+<head> <!--Start of Head-->
+    <meta charset="UTF-8"> <!--Specifies the text of the code, UTF 8 encouraged and most universally used -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Most important line of the code allows it to be adjusted for mobile-->
+    <title>The End</title> <!--Title- labels the name of the Page-->
+    <link rel="stylesheet" href="css/style.css"> <!--Links document to CSS stylesheet-->
+</head> <!--End of Head--> 
+
+<body onload="playAudio ()"> <!-- Informs the browser to play first audio when the page loads-->
+<!--Audio-->
+<audio id="audioPlayer"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+<source src="Audio/We're not going on a bear hunt again .wav"> <!-- src- tells browser where the audio element is located-->
+<source src="Audio/We're not going on a bear hunt again .mp3"> <!--First fallback audio-->
+<source src="Audiofallback/We're not going on a bear hunt again .mp3.m4a"> <!--Second fallback audio-->
+<p>Sadly, your browser does not support this audio. Please click <a href='Audio/We're not going on a bear hunt again .mp3'>here</a> to download an mp3 of the audio.</p> <!--Paragraph informing the user why the audio is not working, with the option to download a mp3 file--->
+</audio>  <!--End of Audio Element-->
+    
+<section id="one">  <!--Beginning of section with id of one-->
+<img src="Images/We're never going a bear hunt again .jpeg" alt="end"> <!--Image tag-src tells the browser where the image is, alt-name of image if the image doesnt load, allows the user to see what the image should be -->
+<p class="text"> We're not going on a bear hunt again</p> <!-- Paragraph containing the text, Class allows all text to be styled the same, id allows it to be styled seperately if required-->
+<a href="index.html"><button id="NextbtnEnd"> The End</button></a> <!--End of Paragraph -->
+</section> <!--End of Section-->
+
+<!--Javascript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js">  </script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"> </script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="js/script.js"></script> <!-- Linking to script document-->
+
+</body> <!--End of body-->
+</html> <!--End of HTML-->

@@ -1,0 +1,123 @@
+<!DOCTYPE html> <!--States the document type as html-->
+<html lang="en"><!-- States the language as english-->
+<head> <!--Start of Head-->
+    <meta charset="UTF-8"> <!--Specifies the text of the code, UTF 8 encouraged and most universally used -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Most important line of the code allows it to be adjusted for mobile-->
+    <title>Cave</title> <!--Title- labels the name of the Page-->
+    <link rel="stylesheet" href="css/style.css"> <!-- Links the page to CSS style sheet-->
+</head> <!--End of head-->
+
+<body onload="playAudio()"> <!-- Informs the browser to play first audio when the page loads-->
+<!--Audio-->
+<audio id="audioPlayer"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+<source src="Audio/Cave1.wav"> <!-- src- tells browser where the audio element is located-->
+<source src="Audio/Cave1.mp3"> <!--First fallback audio-->
+<source src="Audiofallback/Cave1.m4a"> <!--Second fallback audio-->
+<p>Sadly, your browser does not support this audio. Please click <a href='Audio/Cave1.mp3'>here</a> to download an mp3 of the audio.</p> <!--Paragraph informing the user why the audio is not working, with the option to download a mp3 file--->
+</audio> <!--End of audio element-->
+
+<audio id="audioPlayer2"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+<source src="Audio/Cave2.wav"> <!-- src- tells browser where the audio element is located-->
+<source src="Audio/Cave2.mp3"> <!--First fallback audio-->
+<source src="Audiofallback/Cave2.m4a"> <!--Second fallback audio-->
+<p>Sadly, your browser does not support this audio. Please click <a href='Audio/Cave2.mp3'>here</a> to download an mp3 of the audio.</p> <!--Paragraph informing the user why the audio is not working, with the option to download a mp3 file--->
+</audio> <!--End of audio element-->
+
+<audio id="audioPlayer3"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+<source src="Audio/Cave3.wav"> <!-- src- tells browser where the audio element is located-->
+<source src="Audio/Cave3.mp3"> <!--First fallback audio-->
+<source src="Audiofallback/Cave3.m4a"> <!--Second fallback audio-->
+<p>Sadly, your browser does not support this audio. Please click <a href='Audio/Cave3.mp3'>here</a> to download an mp3 of the audio.</p> <!--Paragraph informing the user why the audio is not working, with the option to download a mp3 file--->
+</audio> <!--End of audio element-->
+
+<audio id="audioPlayer4"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+<source src="Audio/It's a Bear.wav"> <!-- src- tells browser where the audio element is located-->
+<source src="Audio/It's a Bear.mp3"> <!--First fallback audio-->
+<source src="Audiofallback/It's a Bear.mp3.m4a"> <!--Second fallback audio-->
+<p>Sadly, your browser does not support this audio. Please click <a href='Audio/It's a Bear.mp3'>here</a> to download an mp3 of the audio.</p> <!--Paragraph informing the user why the audio is not working, with the option to download a mp3 file--->
+</audio> <!--End of audio element-->
+
+<img src="Images/Bats.png" alt="bats" id="bats"> <!--Image of bats utilised within CSS keyframe aniamtion, src tells the browser where the image is located-->
+<img src="Images/Bats.png" alt="bats" id="bats2"> <!--Image of bats utilised within CSS keyframe aniamtion, src tells the browser where the image is located-->
+        
+<section id="one"> <!--First section containing the images and text-->
+<img src="Images/Finding cave.jpeg" alt="findcave" id="uhohcave"> <!--Image of background, src tells browser where to find it, alt- text displayed if image doesnt load, id- allows it to be styled seperately -->
+<p class="text" id="cavetext"> <!-- Paragraph containing the text, Class allows all text to be styled the same, id allows it to be styled seperately if required-->
+    Oh-oh! A CAVE.
+    A narrow, gloomy cave.
+    We can't go over it.
+    We can't go under it   
+</p> <!--End of paragraph-->
+<img onclick="document.getElementById ('two').scrollIntoView();" src="Images/Down arrow.png" alt="arrow" id="arrowCave1"> <!--image element, on click allows the browser to know what will happen when the user clicks on the image, src identify where to locate the image-->
+</section> <!--End of section-->
+
+<section id="two"> <!--Second section containing the images and text-->
+<img src="Images/newcave.jpeg" alt="throughcave"> <!--Image of background, src tells browser where to find it, alt- text displayed if image doesnt load, id- allows it to be styled seperately -->
+<p class="text2" id="cavetext2"> <!-- Paragraph containing the text, Class allows all text to be styled the same, id allows it to be styled seperately if required-->
+    Oh, no!
+    WE'VE GOT TO GO THROUGH IT! 
+    Tiptoe!
+    Tiptoe!
+    Tiptoe!
+</p> <!--End of paragraph-->
+<img onclick="document.getElementById ('three').scrollIntoView();" src="Images/Down arrow.png" alt="arrow" id="arrowCave2"> <!--image element, on click allows the browser to know what will happen when the user clicks on the image, src identify where to locate the image-->
+</section> <!--End of section-->
+
+<section id="three"> <!--Third section containing the images and text-->
+<img src="Images/findingbear.jpg" alt="bear"> <!--Image of background, src tells browser where to find it, alt- text displayed if image doesnt load, id- allows it to be styled seperately -->
+<p class="text3" id="cavetext3"> <!-- Paragraph containing the text, Class allows all text to be styled the same, id allows it to be styled seperately if required-->
+    WHAT'S THAT? 
+    One shiny wet nose!
+    Two big furry ears!
+    Two big goggly eyes!
+</p> <!--End of paragraph-->
+<img onclick="document.getElementById ('four').scrollIntoView();" src="Images/Down arrow.png" alt="arrow" id="arrowCave3"><!--image element, on click allows the browser to know what will happen when the user clicks on the image, src identify where to locate the image-->
+</section> <!--End of section-->
+
+<section id="four"> <!--Fourth section containing the images and text-->
+<img src="Images/Bear.png" alt="bear"> <!--Image of background, src tells browser where to find it, alt- text displayed if image doesnt load, id- allows it to be styled seperately -->
+<img src="Images/Bear stood.png" alt="bear" id="bear"> <!---Image of bear untilised in GSAP animation- catches user by suprise-->
+<p class="text4" id="cavetext4"> <!-- Paragraph containing the text, Class allows all text to be styled the same, id allows it to be styled seperately if required-->
+     ITS A BEAR!!!
+</p> <!--End of paragraph-->
+</section> <!--End of section-->
+
+<section> <!--Start of section containing next and previous button-->
+    <a href="wgoabh5.html"><button id="PrevbtnC"> Previous </button></a> <!-- Anchor element containing previous button linking to the previous page-->
+    <a href="Youchoose.html"><button id="NextbtnC"> Next</button></a> <!-- Anchor element containing next button linking to the next page-->
+  </section> <!--End of section-->
+
+<!--Javascript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js">  </script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"> </script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="js/script.js"></script> <!-- Linking to script document-->
+<script>
+document.getElementById("arrowCave1").addEventListener("click",playgArrow);//Allows the down arrow image to be selected, The event listener enables the image to be controlled by javascript, Tells the browser to run function stated
+document.getElementById("arrowCave2").addEventListener("click",playArrow);//Allows the down arrow image to be selected, The event listener enables the image to be controlled by javascript, Tells the browser to run function stated
+document.getElementById("arrowCave3").addEventListener("click", bear);//Allows the down arrow image to be selected, The event listener enables the image to be controlled by javascript, Tells the browser to run function stated
+
+gsap.from ('#uhohcave', {x:'+2000' , y:200,rotation:270, duration:1 , ease:'bounce'}) //GSAP animation controls the animation of main image tells to to come on from right side, rotate, bounce duration of 2
+function bear() { //Contro;s the bear animation and the text attached
+    console.log ('working'); //Allows you to check the function is working correctly
+    gsap.from ('.text4', {opacity:0, duration:1, ease: 'SlowMo'}) //informs the browser that the text needs to animate using these settings//
+    gsap.from ('#bear', {x:'+2000' , y:200, duration:1 , ease:'bounce'}) //GSAP animation controls the animation of main image tells to to come on from right side, bounce duration of 1
+    playAudio4 () //Informs the browser to run this function which will play the Fourth audio
+    stopAudio3 ()// Stops audio so there is no chance of it playing stimultaneously
+}   
+function playgArrow() { //Function created to inform browser what happens when the user clicks on the arrow
+    console.log ('working'); //Allows you to check the function is working correctly
+    gsap.from ('.text2', {opacity:0, duration:1}) //informs the browser that the text needs to animate using these settings//
+    playAudio2 () //Informs the browser to run this function which will play the Second audio
+    stopAudio () // Stops audio so there is no chance of it playing stimultaneously
+}
+function playArrow() { //Function created to inform browser what happens when the user clicks on the arrow//
+    gsap.from ('.text3', {opacity:0, duration:1}) //Links to GSAP animation, allowing the text to slowly appear using slow mo and the duration of 2 seconds//
+playAudio3 () //Informs the browser to run this function which will play the Third audio
+stopAudio2 ()// Stops audio so there is no chance of it playing stimultaneously
+} 
+</script> <!--End of script-->
+
+</body> <!--End of body-->
+</html> <!-- End of HTML-->
