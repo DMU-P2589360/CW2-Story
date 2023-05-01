@@ -3,7 +3,8 @@ background-color: lightblue; /* Turns background colour light blue*/
  }
 
 /*Styling of text*/
-.text { /*All text follows the same style rules */
+.text { /*All text follows the same style rules- aided byHow To Change Background Image on Scroll.
+https://www.w3schools.com/howto/howto_css_bg_change_scroll.asp */
 background-color: lightgrey; opacity: 70%;; /* Creates a see-through effect */
 color: black; /* text colour set to black */
 font-weight: bold; /*bold text*/
@@ -24,7 +25,8 @@ display: block; /*Sets how wil be displayed on the page*/
 #Heading { /*Styling of heading */
 top:5%; /*So Heading doesnt spill of the page */
 }
-.text2 { /*All text follows the same style rules */
+.text2 { /*All text follows the same style rules*/
+https://www.w3schools.com/howto/howto_css_bg_change_scroll.asp */
 background-color: lightgrey; opacity: 70%;; /* Creates a see-through effect */
 color: black; /* text colour set to black */
 font-weight: bold; /*bold text*/
