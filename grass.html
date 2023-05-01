@@ -65,6 +65,7 @@ function playgArrow() { //Function created to inform browser what happens when t
     console.log ('working'); //Allows you to check the function is working correctly
     gsap.from ('.text2', {opacity:0, duration:1}) //informs the browser that the text needs to animate using these settings//
     playAudio2 () //Informs the browser to run this function which will play the Second audio
+    stopAudio ()
 }
 function playArrow() { //Function created to inform browser what happens when the user clicks on the arrow//
     gsap.from ('.text3', {opacity:0, duration:1}) //Links to GSAP animation, allowing the text to slowly appear using slow mo and the duration of 1 second//
