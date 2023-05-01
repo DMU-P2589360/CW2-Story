@@ -1,0 +1,82 @@
+<!DOCTYPE html>  <!--States the document type as html-->
+<html lang="en"> <!-- States the language as english-->
+<head> <!--Start of Head-->
+    <meta charset="UTF-8">  <!--Specifies the text of the code, UTF 8 encouraged and most universally used -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0"> <!--Most important line of the code allows it to be adjusted for mobile-->
+    <title>Grass</title> <!--Title- labels the name of the Page-->
+    <link rel="stylesheet" href="css/style.css">  <!-- Links the page to CSS style sheet-->
+</head> <!--End of Head-->
+
+<body onload="playAudio()"> <!-- Informs the browser to play first audio when the page loads-->
+<!--Audio-->
+<audio id="audioPlayer"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+<source src="Audio/Grass 1.wav"> <!-- src- tells browser where the audio element is located-->
+<source src="Audio/Grass 1.mp3"> <!--First fallback audio-->
+<source src="Audiofallback/Grass 1.mp3.m4a" type="m4a"> <!--Second fallback audio-->
+<p>Sadly, your browser does not support this audio. Please click <a href='Audio/Grass 1.mp3'>here</a> to download an mp3 of the audio.</p> <!--Paragraph informing the user why the audio is not working, with the option to download a mp3 file--->
+</audio> <!--End of audio element-->
+<audio id="audioPlayer2"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+<source src="Audio/Grass 2.wav"> <!-- src- tells browser where the audio element is located-->
+<source src="Audio/Grass 2.mp3"><!--First fallback audio-->
+<source src="Audiofallback/Grass 2.mp3.m4a"> <!--Second fallback audio-->
+<p>Sadly, your browser does not support this audio. Please click <a href='Audio/Grass 2.mp3'>here</a> to download an mp3 of the audio.</p> <!--Paragraph informing the user why the audio is not working, with the option to download a mp3 file--->
+</audio> <!--End of audio element-->
+
+<audio id="boyAudio"> <!-- Audio element incorprating the source of the audio, ID labels the element allowing it to be accessed by javascript-->
+<source src="Audio/boy.wav"> <!-- src- tells browser where the audio element is located-->
+</audio> <!--End of audio element-->
+
+<img onmouseenter="playBoy ()" src="Images/Boy.jpeg" alt="boy" id="boy">
+
+<section id="One"> <!--First section containing the images and text-->
+<img src="Images/Grass.jpeg" alt="Grass" id="uhohGrass"> <!--Image of background, src tells browser where to find it, alt- text displayed if image doesnt load, id- allows it to be styled seperately -->
+<p class="text" id="grasstext"> <!-- Paragraph containing the text, Class allows all text to be styled the same, id allows it to be styled seperately if required-->
+    Uh-oh! GRASS!
+    Long, wavy grass.
+    We can't go over it.
+    We can't go under it.</p> <!--End of paragraph-->
+<img onclick="document.getElementById ('two').scrollIntoView();" src="Images/Down arrow.png" alt="arrow" id="arrowGrass"><!--image element, on click allows the browser to know what will happen when the user clicks on the image, src identify where to locate the image-->
+</section> <!--End of Section-->
+
+<section id="two"> <!--Second section containing the images and text-->
+<img src="Images/Through gras.jpeg" alt="Through Grass" id="throughGrass"> <!--Image of background, src tells browser where to find it, alt- text displayed if image doesnt load, id- allows it to be styled seperately -->
+<p class="text2" id="grasstext2"> <!-- Paragraph containing the text, Class allows all text to be styled the same, id allows it to be styled seperately if required-->
+Oh, no!
+WE'VE GOT TO GO THROUGH IT!
+Swishy Swashy, Swishy Swashy, Swishy Swashy 
+</p> <!--End of paragraph-->
+</section>  <!--End of Section-->
+
+<section> <!--Section Containg Next and Previous Buttons-->
+<a href="index.html"><button id="Prevbtn"> Previous </button></a> <!-- Anchor element containing previous button linking to the previous page-->
+<a href="wgoabh1.html"><button id="Nextbtn"> Next</button></a> <!-- Anchor element containing next button linking to the next page-->
+</section><!--End of Section-->
+
+<!--Javascript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js">  </script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"> </script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script> <!-- Linking to GSAP javascript allowing it to perform correctly-->
+<script src="js/script.js"></script> <!-- Linking to script document-->
+<script> //Start of Script
+gsap.from ('#uhohGrass', {x:'+2000' , y:200,rotation:270, duration:2 , ease:'elastic'}) //GSAP animation controls the animation of main image tells to to come on from right side, rotate, duration of 2
+document.getElementById ("arrowGrass").addEventListener ("click",playgArrow); //Allows the down arrow image to be selected, The event listener enables the image to be controlled by javascript, Tells the browser to run function stated
+function playgArrow() { //Function created to inform browser what happens when the user clicks on the arrow
+    console.log ('working'); //Allows you to check the function is working correctly
+    gsap.from ('.text2', {opacity:0, duration:1}) //informs the browser that the text needs to animate using these settings//
+    playAudio2 () //Informs the browser to run this function which will play the Second audio
+    stopAudio ()
+}
+function playArrow() { //Function created to inform browser what happens when the user clicks on the arrow//
+    gsap.from ('.text3', {opacity:0, duration:1}) //Links to GSAP animation, allowing the text to slowly appear using slow mo and the duration of 1 second//
+}
+playBoy = () => { //Function created to play dog audio
+    document.getElementById ("boyAudio").play(); //Allows the dog image to be selected, The event listener enables the image to be controlled by javascript, Tells the browser to run function stated, .Play tells the browser to play the audio 
+    }
+    stopBoy = () => { //Function created to stop dog audio
+    document.getElementById ("boyAudio").pause(); //Allows the dog image to be selected, The event listener enables the image to be controlled by javascript, Tells the browser to run function stated, .Play tells the browser to stop the audio 
+    }
+</script> <!--End of Script-->
+
+</body> <!--End of Body-->
+</html> <!--HTML-->
